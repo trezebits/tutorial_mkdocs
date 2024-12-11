@@ -1,0 +1,1350 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Una descripción de las herramientas que uso para crear mis cuadernos de notas">
+      
+      
+      
+        <link rel="canonical" href="https://trezebits.github.io/tutorial_mkdocs/003Markdown.html">
+      
+      
+        <link rel="prev" href="002CrearProyecto.html">
+      
+      
+        <link rel="next" href="004PyMarkdown.html">
+      
+      
+      <link rel="icon" href="octicons/pencil-24">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+    
+    
+      
+        <title>Markdown - Mi guía para crear documentación</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="_css/estilos.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#markdown" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Mi guía para crear documentación" class="md-header__button md-logo" aria-label="Mi guía para crear documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 0 1-.699.409l-5.523 1.68a.75.75 0 0 1-.747-.188.75.75 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 0 0 .1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mi guía para crear documentación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Markdown
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/trezebits/tutorial_mkdocs/" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    trezebits/tutorial_mkdocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Mi guía para crear documentación" class="md-nav__button md-logo" aria-label="Mi guía para crear documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 0 1-.699.409l-5.523 1.68a.75.75 0 0 1-.747-.188.75.75 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 0 0 .1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg>
+
+    </a>
+    Mi guía para crear documentación
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/trezebits/tutorial_mkdocs/" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    trezebits/tutorial_mkdocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="001Instalar.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="002CrearProyecto.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crear cuaderno
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Markdown
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="003Markdown.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Markdown
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parrafos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Párrafos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saltos-de-linea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saltos de línea
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lineas-de-cabecera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Líneas de cabecera
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sangrado-de-parrafos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sangrado de párrafos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcarrafos-preformateados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pçárrafos preformateados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Citas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linea-horizontal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Línea horizontal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-automaticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces automáticos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texto-enfatizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texto enfatizado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codigo-fuente-inline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código fuente inline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imágenes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertar-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insertar html
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escapes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-internos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces internos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-a-secciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enlaces a secciones
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="004PyMarkdown.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Markdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="005PyMdwn.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PyMdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="901GitHub.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Distribuir
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="markdown">Markdown<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h1>
+<p><em>Markdown</em> es una sintaxis sencilla y fácil de editar, ideada en 2004  por <a href="https://en.wikipedia.org/wiki/John_Gruber">John Gruber</a>. Se trata de un proyecto que ha evolucionado muy poco desde su creación, lo que ha dado lugar a que surjan diferentes <a href="https://github.com/jgm/CommonMark/wiki/Markdown-Flavors">versiones</a> mejoradas. McDocs, el generador que estoy usando para los cuadernos de notas, utiliza la versión <a href="https://python-markdown.github.io">Python Markdown</a>. </p>
+<p>Es posible que el editor que utilicemos, que en mi caso es <a href="https://code.visualstudio.com/docs/languages/markdown">Visual Studio Code</a>, cuente con un panel de previsualización que utiliza su propia versión de <em>markdown</em>. Esto hace que el aspecto final de las páginas web generadas por MkDocs no coincidirá con la previsualización.</p>
+<p>Podemos ver las especificaciones originales en la página web de John Gruber, <a href="https://daringfireball.net/projects/markdown/">daringfirewall</a>. Los propios archivos originales de esta documentación están escritos en formato <em>markdown</em>, y resultan interesantes como ejemplo que podemos estudiar. Se encuentran disponibles en:</p>
+<ul>
+<li><a href="https://daringfireball.net/projects/markdown/index.text">página <em>main</em></a></li>
+<li><a href="https://daringfireball.net/projects/markdown/basics.text">página <em>basics</em></a></li>
+<li><a href="https://daringfireball.net/projects/markdown/syntax.text">página <em>syntax</em></a></li>
+</ul>
+<p>En este capítulo nos limitamos a estas especificaciones básicas.</p>
+<h2 id="parrafos">Párrafos<a class="headerlink" href="#parrafos" title="Permanent link">&para;</a></h2>
+<p>Los navegadores web descargan e interpretan archivos de texto en formato HTML. Las líneas de texto se concatenan en una única línea, que se ajustará dependiendo del ancho de la ventana, y los espacios entre palabras se reducen a un espacio.</p>
+<p>En formato markdown, podemos separar los párrafos insertando una línea en blanco entre ellos. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>Este es el primer párrafo. Es lo suficientemente
+largo como para ocupar varias líneas, que serán visualizadas
+como un bloque de texto, sin separación entre líneas.
+
+Este es el segundo párrafo. Dejamos una línea
+en blanco para separarlo del primero.
+</code></pre></div>
+<p>Esto mostrará:</p>
+<div class="conmarco">
+<p>Este es el primer párrafo. Es lo suficientemente
+largo como para ocupar varias líneas, que serán visualizadas
+como un bloque de texto, sin separación entre líneas.</p>
+
+<p>Este es el segundo párrafo. Dejamos una línea
+en blanco para separarlo del primero.</p>
+</div>
+
+<p>El formato <em>markdon</em> considera línea en blanco aquella que no contiene caracteres o solo tiene espacios en blanco. Si escribimos varias líneas en blanco entre dos párrafos, el exceso será ignorado y contarán como una sola.</p>
+<p>En los archivos <em>markdown</em>, puede ser una buena idea escribir los textos de forma que en cada línea pongamos una frase, limitando el tamaño de las líneas y mejorando la legibilidad, en la seguridad de que en la conversión se unirán los textos para formar el párrafo completo.</p>
+<h2 id="saltos-de-linea">Saltos de línea<a class="headerlink" href="#saltos-de-linea" title="Permanent link">&para;</a></h2>
+<p>Podemos forzar un salto de línea insertando manualmente una etiqueta html <code>&lt;br/&gt;</code> en mitad del texto. MkDocs respeta las etiquetas html y las deja como parte del texto generado.</p>
+<p>Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>Este es el primer párrafo. <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> Es lo suficientemente
+largo como para ocupar varias líneas, que serán visualizadas
+como un bloque de texto, sin separación entre líneas.
+
+Este es el segundo párrafo. Dejamos una línea
+en blanco para separarlo del primero.
+</code></pre></div>
+<p>Esto mostrará:</p>
+<div class="conmarco">
+<p>Este es el primer párrafo.<br/>Es lo suficientemente
+largo como para ocupar varias líneas, que serán visualizadas
+como un bloque de texto, sin separación entre líneas.</p>
+
+<p>Este es el segundo párrafo. Dejamos una línea
+en blanco para separarlo del primero.</p>
+</div>
+
+<p>La etiqueta <code>&lt;br/&gt;</code> es la abreviatura de "break".</p>
+<h2 id="lineas-de-cabecera">Líneas de cabecera<a class="headerlink" href="#lineas-de-cabecera" title="Permanent link">&para;</a></h2>
+<p>Nótese que, en estos cuadernos, cada página tiene un párrafo de título y otros de cabecera de sección, que se muestran con un tipo de letra especial. Estos párrafos se denominan <em>cabeceras</em>.</p>
+<p>En fotmato <em>markdown</em> identificamos estos párrafos anteponiendo uno o más caracteres <code>#</code>.  Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># Título del documento</span>
+
+Texto del documento
+</code></pre></div>
+<p>El carácter (o caracteres) <code>#</code> se suprimirá del resultado final. Debemos dejar un espacio en blanco entre la marca <code>#</code> y el texto del título para que tenga efecto. </p>
+<p>Podemos crear una estructura formada por un título general del documento, títulos a nivel de sección (nivel 2), a nivel de subsección (nivel 3) y así sucesivamente hasta 6 niveles. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># Título del documento</span>
+
+<span class="gu">## Sección 1</span>
+
+<span class="gu">### Subsección 1.1</span>
+
+Párrafo de texto regular
+
+<span class="gu">### Subsección 1.2</span>
+
+Otro párrafo de texto regular
+</code></pre></div>
+<p>El nivel se determina de acuerdo al número de caracteres <code>#</code>. </p>
+<p>Opcionalmente podemos "cerrar" las líneas de título con más caracteres <code>#</code> a la derecha, que en el resultado final serán suprimidos. Es algo puramente "estético" y ni siquiera hace falta que el número de caracteres <code>#</code> coincida con los colocados a la izquierda:</p>
+<div class="highlight"><pre><span></span><code><span class="gu">## Título de la sección ######</span>
+</code></pre></div>
+<p>Si usamos estos párrafos de cabecera, debemos estructurar el documento de la forma adecuada. Téngase en cuenta que las cabeceras se utilizan con muchos propósitos. Sirven, por ejemplo, para para que MkDocs inserte de forma automática una tabla de contenidos, para crear enlaces a una sección o incluso las utilizan los buscadores de Internet. Es un error usar párrafos de cabecera solo para utilizar un tipo de letra especial. Para ese propósito hay otros mecanismos.</p>
+<p>La sintaxis de títulos basada en prefijos <code>#</code> es conocida como <em>"atx"</em>, y fue inventada por <a href="https://es.wikipedia.org/wiki/Aaron_Swartz">Aaron Swartz</a>, uno de los principales colaboradores en el diseño de <em>markdown</em>. Alternativamente existe la posibilidad de utilizar otra forma de sintaxis inspirada en el antiguo formato "<em>Setext</em>". Se trata de una opción que solo admite dos niveles de cabecera. Los títulos se delimitan subrayando con caracteres <code>=</code> las cabeceras de nivel uno, y con guiones las de nivel dos. Por ejemplo:</p>
+<p><div class="highlight"><pre><span></span><code><span class="gh">Título del documento</span>
+<span class="gh">====================</span>
+
+<span class="gu">Título de la sección</span>
+<span class="gu">--------------------</span>
+
+Párrafo de texto regular
+</code></pre></div>
+El número de caracteres de subrayado no tiene por que coincidir con la longitud del título.</p>
+<h2 id="sangrado-de-parrafos">Sangrado de párrafos<a class="headerlink" href="#sangrado-de-parrafos" title="Permanent link">&para;</a></h2>
+<p>Llamamos <em>párrafo sangrado</em> a aquel en el que todas sus líneas tienen espacios en blanco a la izquierda. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>Primer párrafo estándar.
+
+    Este es un párrafo con sangría.
+    Tiene 4 espacios a la izquierda.
+</code></pre></div>
+<p><em>Markdown</em> utiliza la sangría con propósitos especiales, y por lo tanto, debemos evitar todo tipo de espaciado a la izquierda excepto para esos casos particulares. El uso más habitual es crear párrafos <em>preformateados</em>.</p>
+<h2 id="pcarrafos-preformateados">Pçárrafos preformateados<a class="headerlink" href="#pcarrafos-preformateados" title="Permanent link">&para;</a></h2>
+<p>Supongamos que estamos creando un manual de programación en lenguaje java. Escribimos algo así como:</p>
+<div class="highlight"><pre><span></span><code>Programa de ejemplo:
+
+class HelloWorld {
+          public static void main (String args[]) {
+               System.out.println(&quot;Hola Mundo&quot;);
+          }
+     }
+</code></pre></div>
+<p>Pero al visualizarlo, se unen todas las líneas de texto y el resultado es:</p>
+<div class="conmarco">
+Programa de ejemplo:
+
+class HelloWorld {
+          public static void main (String args[]) {
+               System.out.println("Hola Mundo");
+          }
+     }
+</div>
+
+<p>Queremos que el texto del programa forme un párrafo donde se respeten los saltos de línea y los espacio extra. La solución es marcar todo el texto como <em>párrafo preformateado</em>. Se logra añadiendo un sangrado de cuatro espacios:</p>
+<div class="highlight"><pre><span></span><code>Programa de ejemplo:
+
+    class HelloWorld {
+              public static void main (String args[]) {
+                   System.out.println(&quot;Hola Mundo&quot;);
+              }
+         }
+</code></pre></div>
+<p>Y ahora se respeta el espaciado, y se muestra en un estilo de letra especial:</p>
+<div class="conmarco">
+Programa de ejemplo:
+
+<pre><code>
+class HelloWorld {
+          public static void main (String args[]) {
+               System.out.println("Hola Mundo");
+          }
+     }
+</code></pre>
+</div>
+
+<p>Nótese que un sangrado de tres espacios no tiene efecto. Ha de ser de cuatro. Los espacios extra se mostrarán como tales.</p>
+<p>En los fragmentos preformateados se respetan los espacios extra y no tiene efecto el formato markdown, considerando las marcas como texto literal:</p>
+<div class="highlight"><pre><span></span><code>Texto regular
+
+    # Párrafo de cabecera sangrado
+</code></pre></div>
+<p>Muestra:</p>
+<div class="conmarco">
+Texto regular
+<pre><code>
+# Párrafo de cabecera sangrado
+</code></pre>
+</div>
+
+<h2 id="citas">Citas<a class="headerlink" href="#citas" title="Permanent link">&para;</a></h2>
+<p>Los párrafos de citas se muestran en un formato especial, y markdown las delimita anteponiendo en cada línea un carácter <code>&gt;</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">Esta es una cita con dos párrafos.</span>
+<span class="k">&gt; </span><span class="ge">Las líneas de un párrafo se concatenan</span>
+<span class="k">&gt; </span><span class="ge">en una sola.</span>
+&gt; 
+<span class="k">&gt; </span><span class="ge">Este es el segundo párrafo de la cita.</span>
+</code></pre></div>
+<p>Muestra:</p>
+<blockquote>
+<p>Esta es una cita con dos párrafos.
+Las líneas de un párrafo se concatenan
+en una sola.</p>
+<p>Este es el segundo párrafo de la cita.</p>
+</blockquote>
+<p>El tipo de letra y otros elementos de formato dependen del estilo utilizado en nuestra página web, algo que se determina en un archivo CSS de "hoja de estilos", que es generado por MkDocs. Podemos complementarlo con estilos a nuestro gusto.</p>
+<p>El prefijo <code>&gt;</code> solo es necesario en la primera línea de cada párrafo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">Lorem ipsum dolor sit amet,</span>
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+<span class="k">&gt; </span><span class="ge">Donec sit amet nisl. Aliquam semper ipsum sit amet velit.</span>
+Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre></div>
+<p>Aunque es más elegante escribir:</p>
+<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">Lorem ipsum dolor sit amet,</span>
+  consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+  Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+<span class="k">&gt; </span><span class="ge">Donec sit amet nisl. Aliquam semper ipsum sit amet velit.</span>
+  Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre></div>
+<p>Lo que muestra:</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet,
+  consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+  Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+  Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<p>Las citas pueden "<em>anidarse</em>" (una dentro de otra) si añadimos caracteres "<code>&gt;</code>" adicionales:</p>
+<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">Primer nivel de texto.</span>
+<span class="k">&gt;</span>
+<span class="ge">&gt; &gt; Cita dentro de otra.</span>
+<span class="k">&gt;</span>
+<span class="ge">&gt; Volviendo al primer nivel.</span>
+</code></pre></div>
+<p>Lo que muestra:</p>
+<blockquote>
+<p>Primer nivel de texto.</p>
+<blockquote>
+<p>Cita dentro de otra.</p>
+</blockquote>
+<p>Volviendo al primer nivel.</p>
+</blockquote>
+<p>Un párrafo de cita puede contener otros elementos <em>markdown</em>, incluyendo listas, cabeceras, bloques de código, etc.</p>
+<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">## Cabecera.</span>
+&gt; 
+<span class="k">&gt; </span><span class="ge">1. Primer elemento.</span>
+<span class="k">&gt; </span><span class="ge">2. Segundo elemento.</span>
+&gt; 
+<span class="k">&gt; </span><span class="ge">Texto fuente de un programa delimitado mediante sangrado:</span>
+&gt; 
+<span class="k">&gt; </span><span class="ge">    return shell_exec(&quot;echo $input | $markdown_script&quot;);</span>
+</code></pre></div>
+<h2 id="listas">Listas<a class="headerlink" href="#listas" title="Permanent link">&para;</a></h2>
+<p>Para crear una lista con viñetas podemos usar como marcadores unos asteriscos (*), guiones (-) o símbolos de suma (+). Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>Lista de colores:
+
++ rojo
++ verde
++ azul
+</code></pre></div>
+<p>El navegador web muestra los elementos de la lista en línea aparte y precedidos por una viñeta:</p>
+<div class="conmarco">
+<p>Lista de colores:</p>
+
+<ul>
+<li> rojo</li>
+<li> verde</li>
+<li> azul</li>
+</ul>
+</div>
+
+<p>Las listas numeradas se escriben de la siguiente forma</p>
+<div class="highlight"><pre><span></span><code>Lista de colores:
+
+<span class="k">1.</span>  rojo
+<span class="k">2.</span>  verde
+<span class="k">3.</span>  azul
+</code></pre></div>
+<p>Lo que muestra:</p>
+<div class="conmarco">
+<p>Lista de colores:</p>
+
+<ol>
+<li> rojo</li>
+<li> verde</li>
+<li> azul</li>
+</ol>
+</div>
+
+<p>Sin embargo, la numeración será ignorada en el resultado final. En principio se asume que empieza por 1, ya que, al convertir a formato html, no se indica nada:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Lista de colores:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> rojo<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> verde<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> azul<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>La etiqueta <code>&lt;ol&gt;</code> significa <em>ordered list</em>. Es tarea del navegador numerar los párrafos al visualizarlos. En formato <em>markdown</em>, podríamos escribir:</p>
+<div class="highlight"><pre><span></span><code>Lista de colores:
+
+<span class="k">1.</span>  rojo
+<span class="k">1.</span>  verde
+<span class="k">1.</span>  azul
+</code></pre></div>
+<p>... y el resultado final mostraría números 1, 2, 3 ... ¿Como establecer otra numeración? Insertando de forma manual etiquetas HTML en el texto markdown:</p>
+<div class="highlight"><pre><span></span><code>Lista de colores:
+
+<span class="p">&lt;</span><span class="nt">ol</span> <span class="na">start</span><span class="o">=</span><span class="s">&quot;9&quot;</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> rojo<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> verde<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> azul<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Muestra:</p>
+<div class="conmarco">
+<p>Lista de colores:</p>
+
+<ol start="9">
+<li> rojo</li>
+<li> verde</li>
+<li> azul</li>
+</ol>
+</div>
+
+<p>Las capacidades del formato HTML van mucho más allá de lo que nos permite <em>markdown</em>, pero este resulta mucho más cómodo, y en el 99% de los textos, su uso es más que suficiente.</p>
+<p>Las listas se pueden sangrar hasta tres espacios (con cuatro sería texto preformateado):</p>
+<div class="highlight"><pre><span></span><code>Párrafo de texto regular.
+
+<span class="w">   </span><span class="k">-</span><span class="w"> </span>elemento 1
+<span class="w">   </span><span class="k">-</span><span class="w"> </span>elemento 2
+<span class="w">   </span><span class="k">-</span><span class="w"> </span>elemento 3
+</code></pre></div>
+<p>Entre el marcador (viñeta/número) y el texto debemos dejar al menos un espacio.</p>
+<p>Un elemento finaliza al introducir el siguiente elemento con un marcador, o bien, al encontrar una línea en blanco. Sucesivas líneas de texto formarán parte del elemento y su unirán en una sola:</p>
+<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>  Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi,  viverra nec, 
+fringilla in, laoreet vitae, risus.
+
+<span class="k">*</span><span class="w"> </span>  Donec sit amet nisl.
+Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer
+libero luctus adipiscing.
+</code></pre></div>
+<p>Pero es más elegante escribir el texto alineado:</p>
+<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>  Lorem ipsum dolor sit amet,
+    consectetuer adipiscing elit.
+    Aliquam hendrerit mi posuere lectus.
+    Vestibulum enim wisi,  viverra nec,
+    fringilla in, laoreet vitae, risus.
+
+<span class="k">*</span><span class="w"> </span>  Donec sit amet nisl.
+    Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer
+    libero luctus adipiscing.
+</code></pre></div>
+<p>Si queremos que un nuevo párrafo forme parte del elemento anterior, debemos alinear el sangrado de la primera línea del párrafo, que debe consistir en al menos cuatro espacios:</p>
+<div class="highlight"><pre><span></span><code><span class="k">1.</span>  Elemento con dos párrafos.
+    Lorem ipsum dolor sit amet,
+    consectetuer adipiscing elit.
+    Aliquam hendrerit mi posuere lectus.
+
+    Vestibulum enim wisi, viverra nec,
+    fringilla in, laoreet vitae, risus.
+    Donec sit amet nisl.
+    Aliquam semper ipsum sit amet velit.
+
+<span class="k">2.</span>  Suspendisse id sem consectetuer
+    libero luctus adipiscing.
+</code></pre></div>
+<p>Si colocamos una cita dentro de un elemento, el carácter <code>&gt;</code> debe estar sangrado:</p>
+<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>  un elemento con cita:
+
+<span class="k">    &gt; </span><span class="ge">Una cita dentro de un</span>
+<span class="k">    &gt; </span><span class="ge">elemento de lista</span>
+</code></pre></div>
+<p>Para colocar un bloque de texto preformateado dentro de un elemento de lista, tenemos que sangrarlo con al menos ocho espacios:</p>
+<p><div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>  Un elemento de lista:
+
+        texto preformateado
+</code></pre></div>
+Nótese que podríamos crear un elemento de lista accidentalmente. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>1986. Un año muy especial.
+</code></pre></div>
+<p>La solución es poner una barra invertida <code>\</code> antes del punto, que no será mostrada. Estas barras hacen que el caracter que viene a continuación se considere como texto regular.</p>
+<div class="highlight"><pre><span></span><code>1986\. Un año muy especial.
+</code></pre></div>
+<p>Podemos crear listas anidadas (una dentro de otra) si añadimos sangrado a la lista interna:</p>
+<div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>Elemento 1
+<span class="w">    </span><span class="k">-</span><span class="w"> </span>elemento 1.1
+<span class="w">    </span><span class="k">-</span><span class="w"> </span>elemento 1.2
+<span class="k">-</span><span class="w"> </span>Elemento 2
+</code></pre></div>
+<p>lo que muestra:</p>
+<ul>
+<li>Elemento 1<ul>
+<li>elemento 1.1</li>
+<li>elemento 1.2</li>
+</ul>
+</li>
+<li>Elemento 2</li>
+</ul>
+<h2 id="linea-horizontal">Línea horizontal<a class="headerlink" href="#linea-horizontal" title="Permanent link">&para;</a></h2>
+<p>Podemos insertar una línea horizontal insertando una etiqueta <code>&lt;hr/&gt;</code> o bien si escribimos en una línea aparte tres o más guiones, asteriscos o caracteres de subrayado. Podemos añadir espacios entre estos símbolos. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>* * *
+
+***
+
+*****
+
+- - -
+
+--------------------------
+</code></pre></div>
+<p>El aspecto de la línea depende de la hoja de estilos utilizada por MkDocs, o de las que añadamos nosotros.</p>
+<h2 id="enlaces">Enlaces<a class="headerlink" href="#enlaces" title="Permanent link">&para;</a></h2>
+<p>En el texto de una página web solemos encontrar <em>enlaces</em>, que al pulsar sobre ellos, nos llevan a otra ubicación. Todo enlace está formado por dos componentes principales:</p>
+<ul>
+<li>el texto a mostrar</li>
+<li>la dirección enlazada (URL)</li>
+</ul>
+<p>En formato <em>markdown</em> hay dos formas de especificar un enlace, <em>inline</em> y <em>por referencia</em>. En el formato  <em>inline</em>, escribimos el texto del enlace [entre corchetes], seguido de la URL entre paréntesis:</p>
+<div class="codehilite"><pre><span></span><code>[texto del enlace](http://ejemplo.com/)
+</code></pre></div>
+
+<p>Todo ello en mitad de un párrafo, si es nuestro deseo:</p>
+<div class="codehilite"><pre><span></span><code>Visite [mi página web](http://ejemplo.com/) para más información
+</code></pre></div>
+
+<p>En formato HTML, los enlaces pueden tener opcionalmente un atributo "title", que es un texto que se suele mostrar al pasar el ratón sobre el enlace. Se indica entre comillas a continuación de la URL:</p>
+<div class="codehilite"><pre><span></span><code>[texto del enlace](http://ejemplo.com/ &quot;Pulse aquí&quot;)
+</code></pre></div>
+
+<p>Si queremos enlazar con un archivo en el mismo repositorio, podemos usar "rutas relativas" a la ubicación del archivo actual:</p>
+<div class="highlight"><pre><span></span><code>Véase [<span class="nt">Acerca de</span>](<span class="na">./acercade.html</span>)
+</code></pre></div>
+<p>Podemos indicar el archivo <em>markdown</em> en lugar del archivo html generado. MkDocs transformará la URL para sustituirla por el archivo HTML:</p>
+<div class="highlight"><pre><span></span><code>Véase [<span class="nt">Acerca de</span>](<span class="na">./acercade.md</span>)
+</code></pre></div>
+<p>Nótese que si clonamos un repositorio y llevamos los archivos a otra ubicación, las direcciones relativas funcionarán mejor que las absolutas, ya que no tenemos que ajustar el texto con la nueva ruta.</p>
+<p>La otra forma de crear enlaces en formato <em>markdown</em> es "por referencia". Se sustituye la URL entre paréntesis por una referencia entre corchetes:</p>
+<div class="highlight"><pre><span></span><code>Este es [<span class="nt">un ejemplo</span>][<span class="nl">1</span>] de enlace por referencia.
+Este es [<span class="nt">otro ejemplo</span>][<span class="nl">2</span>] de enlace por referencia.
+</code></pre></div>
+<p>Opcionalmente podemos poner un espacio entre ambos elementos:</p>
+<div class="highlight"><pre><span></span><code>Este es [un ejemplo] [1] de enlace por referencia.
+</code></pre></div>
+<p>En algún lugar del documento debemos definir la referencia. Se escribe en línea aparte:</p>
+<div class="highlight"><pre><span></span><code>[<span class="nl">1</span>]: <span class="na">http://ejemplo.com/ &quot;Título opcional&quot;</span>
+[<span class="nl">2</span>]: <span class="na">http://ejemplo2.com/ &quot;Título opcional&quot;</span>
+</code></pre></div>
+<p>El sangrado no puede superar los tres espacios. Entre el carácter <code>:</code> y la URL debemos colocar al menos un espacio. </p>
+<p>El atributo <em>title</em> es opcional, y puede escribirse entre comillas, apóstrofos o paréntesis: </p>
+<p><div class="highlight"><pre><span></span><code>[<span class="nl">id</span>]: <span class="na">http://ejemplo.com/  &quot;Título opcional&quot;</span>
+[<span class="nl">id</span>]: <span class="na">http://ejemplo.com/  &#39;Título opcional&#39;</span>
+[<span class="nl">id</span>]: <span class="na">http://ejemplo.com/  (Título opcional)</span>
+</code></pre></div>
+La URL puede escribirse entre símbolos <code>&lt; &gt;</code></p>
+<div class="highlight"><pre><span></span><code>[<span class="nl">id</span>]: <span class="na">&lt;http://ejemplo.com/&gt;  &quot;Título opcional&quot;</span>
+</code></pre></div>
+<p>Podemos poner el título en la siguiente línea y sangrarlo con espaciado extra si lo deseamos:</p>
+<div class="highlight"><pre><span></span><code>[<span class="nl">id</span>]: <span class="na">&lt;http://ejemplo.com/&gt;</span>
+      &quot;Título opcional&quot;
+</code></pre></div>
+<p>Nótese que estas líneas con definiciones de enlaces no serán visibles en el resultado final.</p>
+<p>Las etiquetas usadas para definir enlaces son case-insensitive. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>[<span class="nt">texto 1</span>][<span class="nl">a</span>]
+[<span class="nt">texto 2</span>][<span class="nl">A</span>]
+</code></pre></div>
+<p>se considera que la referencia es la misma.</p>
+<p>Es posible usar el texto del enlace como etiqueta, lo que se conoce como <em>implicit link name</em>. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>[<span class="nt">Google</span>][]
+</code></pre></div>
+<p>O bien, sin la segunda pareja de corchetes:</p>
+<div class="highlight"><pre><span></span><code>[Google]
+</code></pre></div>
+<p>Y definimos el enlace como:</p>
+<div class="highlight"><pre><span></span><code>[<span class="nl">Google</span>]: <span class="na">http://google.com/</span>
+</code></pre></div>
+<p>Esto también funciona cuando el texto contiene espacios:</p>
+<div class="highlight"><pre><span></span><code>Visite [<span class="nt">Daring Fireball</span>][] para más información.
+</code></pre></div>
+<p>Y definimos el enlace como:</p>
+<div class="highlight"><pre><span></span><code>[<span class="nl">Daring Fireball</span>]: <span class="na">http://daringfireball.net/</span>
+</code></pre></div>
+<p>Las URLs se pueden colocar en cualquier lugar del documento. Hay quien prefiere ponerlas tras el párrafo en cuestión, y otros prefieren poner todas las definiciones agrupadas al final del documento.</p>
+<p>¿Para que sirven los enlaces por referencia? Cuando en un documento hay varios enlaces a la misma página, evitan tener que escribir la URL varias veces. Basta con poner el <code>[texto del enlace]</code> allí donde queremos uno, y poner la lista de URLs en algún lugar del documento. Hay quien prefiere dejarlas para el inicio o final del texto, y quien decide poner las URLs tras cada párrafo.</p>
+<h2 id="enlaces-automaticos">Enlaces automáticos<a class="headerlink" href="#enlaces-automaticos" title="Permanent link">&para;</a></h2>
+<p>Podemos escribir una URL en mitad del texto, que será mostrada como enlace si la escribimos entre delimitadores <code>&lt; &gt;</code>.</p>
+<div class="highlight"><pre><span></span><code>Página web: &lt;http://ejemplo.com/&gt;
+</code></pre></div>
+<p>También podemos hacer esto con direcciones de correo:</p>
+<div class="highlight"><pre><span></span><code>Enviar un correo a: &lt;direccion@ejemplo.com&gt;
+</code></pre></div>
+<h2 id="texto-enfatizado">Texto enfatizado<a class="headerlink" href="#texto-enfatizado" title="Permanent link">&para;</a></h2>
+<p>Markdown considera los asteriscos (<code>*</code>) y caracteres de subrayado (<code>_</code>) como indicadores de énfasis. Todo texto entre asteriscos o caracteres (<code>_</code>) será mostrado con un tipo de letra enfatizado (generalmente cursiva), y si usamos doble asterisco o subrayado, en negrita.</p>
+<p>Lo siguiente</p>
+<div class="highlight"><pre><span></span><code><span class="ge">*asterisco*</span>
+<span class="ge">_subrayado_</span>
+<span class="gs">**doble asterisco**</span>
+<span class="gs">__doble subrayado__</span>
+</code></pre></div>
+<p>Se mostrará como:</p>
+<div class="conmarco">
+<em>asterisco</em><br>
+<em>subrayado</em><br>
+<strong>doble asterisco</strong><br>
+<strong>doble subrayado</strong><br>
+</div>
+
+<p>Podemos poner énfasis en mitad de una palabra:</p>
+<div class="highlight"><pre><span></span><code>Don*super*increíble
+</code></pre></div>
+<p>pero todo marcador rodeado de espacios será tratado como texto regular. Si queremos forzar que se trate como tal, podemos "<em>escapar</em>" las marcas precediéndolas con una barra invertida:</p>
+<div class="highlight"><pre><span></span><code>\*texto que se mostrará entre asteriscos\*
+</code></pre></div>
+<p>Podemos combinar dos estilos diferentes de enfatizado:</p>
+<p><div class="highlight"><pre><span></span><code><span class="ge">*Esto es __super__ importante*</span>
+</code></pre></div>
+lo que muestra:</p>
+<div class="conmarco">
+<em>Esto es <strong>super</strong> importante</em>
+</div>
+
+<h2 id="codigo-fuente-inline">Código fuente inline<a class="headerlink" href="#codigo-fuente-inline" title="Permanent link">&para;</a></h2>
+<p>Podemos indicar que un fragmento de texto se muestre de forma literal delimitándolo con acentos invertidos (<code>`</code>). A diferencia de los bloques preformateados, un fragmento literal puede formar parte de un párrafo regular. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>Usar <span class="sb">`*texto entre asteriscos*`</span> para enfatizar
+</code></pre></div>
+<p>generará:</p>
+<div class="conmarco">
+Usar <code>*texto entre asteriscos*</code> para enfatizar
+</div>
+
+<p>Para incluir un acento invertido en el texto literal, usar como delimitadores dos acentos:</p>
+<div class="highlight"><pre><span></span><code>``Usar un carácter (<span class="sb">`) delimitador.`</span>`
+</code></pre></div>
+<p>Los delimitadores pueden escribirse con espacios, uno tras la apertura y otro antes del cierre, que serán eliminados del resultado final.</p>
+<p>Caracteres como <code>&lt; &gt;</code> no tendrán la consideración de etiquetas HTML, sino que se considerarán como texto regular</p>
+<div class="highlight"><pre><span></span><code>No usar etiquetas <span class="sb">`&lt;/br&gt;`</span>.
+</code></pre></div>
+<p>Se muestra como:</p>
+<div class="conmarco">
+No usar etiquetas <code>&lt;/br&gt;</code>.
+</div>
+
+<p>Sin los acentos invertidos, se convertiría en un salto de línea.</p>
+<h2 id="imagenes">Imágenes<a class="headerlink" href="#imagenes" title="Permanent link">&para;</a></h2>
+<p>La sintaxis para insertar imágenes es la misma que para los enlaces, añadiendo un prefijo <code>!</code>. El texto del enlace será considerado como <em>texto alternativo</em> cuando no se puede mostrar la imagen.</p>
+<p>Las imágenes <em>Inline</em> se escriben así:</p>
+<div class="highlight"><pre><span></span><code>![<span class="nt">texto</span>](<span class="na">/carpeta/img.jpg</span>)
+
+![<span class="nt">texto</span>](<span class="na">/carpeta/img.jpg &quot;Título&quot;</span>)
+</code></pre></div>
+<p>Y las imágenes por referencia:</p>
+<div class="highlight"><pre><span></span><code>![texto][id]
+</code></pre></div>
+<p>la definición es idéntica a la de los enlaces:</p>
+<div class="highlight"><pre><span></span><code>[<span class="nl">id</span>]: <span class="na">carpeta/imagen  &quot;Título&quot;</span>
+</code></pre></div>
+<p>Si queremos especificar las dimensiones, usar etiquetas html <code>&lt;img&gt;</code> en lugar del formato <em>markdown</em>.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;imagen.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;texto alternativo&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;42&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;42&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="insertar-html">Insertar html<a class="headerlink" href="#insertar-html" title="Permanent link">&para;</a></h2>
+<p>El problema de <em>markdown</em> es que no cubre todas las funcionalidades que proporcionan las etiquetas html, que es una sintaxis de una gran complejidad. </p>
+<p>La solución a aplicar es simple; basta con insertar directamente etiquetas html en los textos <em>markdown</em> cuando sea necesario. En general serán respetadas, salvo cuando entren en conflicto con las etiquetas generadas en el proceso de conversión.</p>
+<p>En líneas generales, las etiquetas utilizadas para delimitar bloques de texto html, tales como <code>&lt;div&gt;</code>, <code>&lt;table&gt;</code>,  <code>&lt;pre&gt;</code>,  <code>&lt;p&gt;</code> , etc. , deben separarse del resto del documento con una línea en blanco al principio y final del bloque, y las etiquetas de inicio y fin de bloque no deben llevar sangrado alguno.</p>
+<p>Por ejemplo, las funcionalidades proporcionadas por <em>markdown</em> no incluyen la creación de tablas. Podemos insertar una usando directamente la sintaxis html:</p>
+<div class="highlight"><pre><span></span><code>Párrafo de texto regular markdown
+
+&lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;texto de celda&lt;/td&gt;
+        &lt;/tr&gt;
+&lt;/table&gt;
+
+Otro párrafo de texto regular markdown
+</code></pre></div>
+<p>Nótese que dentro de un bloque html no tienen efecto las marcas utilizadas en la sintaxis <em>markdown</em>.  Por ejemplo, un asterisco se visualizará como tal, no como delimitador de texto en cursiva.</p>
+<p>Además de utilizar etiquetas html para delimitar bloques enteros, podemos usar otras etiquetas dentro de un párrafo regular. Por ejemplo, ya hemos visto como utilizar <code>&lt;br&gt;</code> para forzar un salto de línea, o <code>&lt;span&gt;...&lt;/span&gt;</code> para aplicar un estilo especial a un fragmento de texto.</p>
+<p>Podemos incluso sustituir el formato <em>markdown</em> por etiquetas html si ese es nuestro deseo. Por ejemplo, para insertar una imagen escribimos:</p>
+<div class="highlight"><pre><span></span><code>![<span class="nt">texto alternativo</span>](<span class="na">imagen.jpg</span>)
+</code></pre></div>
+<p>pero podemos hacerlo en formato html:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;imagen.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;texto alternativo&quot;</span> <span class="p">&gt;</span>
+</code></pre></div>
+<p>No conviene abusar de esta posibilidad, porque hace los documentos más complejos de leer y estamos renunciando a los beneficios de la sintaxis <em>markdown</em>. Sin embargo, resulta útil si queremos especificar algo de mayor complejidad.</p>
+<h2 id="escapes">Escapes<a class="headerlink" href="#escapes" title="Permanent link">&para;</a></h2>
+<p>Todo carácter precedido por una barra invertida será tratado como texto regular. Por ejemplo, </p>
+<div class="highlight"><pre><span></span><code>\*texto con asteriscos\*
+</code></pre></div>
+<p>Mostrará los asteriscos como parte del texto, sin que se consideren como delimitadores de letra enfatizada.</p>
+<p>Un carácter <code>\</code> se considerará como texto regular siempre que no preceda a alguno de los siguientes:</p>
+<div class="highlight"><pre><span></span><code>\   barra invertida
+`   acento invertido
+*   asterisco
+_   subrayado
+{}  llaves
+[]  corchetes
+()  paréntesis
+#   hash
++   signo de suma
+-   guión
+.   punto
+!   exclamación
+</code></pre></div>
+<h2 id="enlaces-internos">Enlaces internos<a class="headerlink" href="#enlaces-internos" title="Permanent link">&para;</a></h2>
+<p>La <a href="https://daringfireball.net/projects/markdown/syntax#link">sintaxis estándar de enlaces</a> es la siguiente:</p>
+<div class="codehilite"><pre><span></span><code><span class="o">[</span><span class="n">texto</span><span class="o">]</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span>
+</code></pre></div>
+
+<p>MkDocs permite utilizar nombres de documentos <em>markdown</em> como URLs. Al hacer la conversión, sustituirá esa referencia por la página definitiva. Por este motivo debemos utilizar paths relativos:</p>
+<div class="highlight"><pre><span></span><code>Véase [<span class="nt">licencia</span>](<span class="na">licencia.md</span>) del proyecto para más detalles.
+</code></pre></div>
+<p>En este caso se asume que el documento enlazado está en la misma carpeta que el documento actual. Si el archivo destino está en otro directorio, asegurarnos de incluirlo en el path relativo:</p>
+<div class="highlight"><pre><span></span><code>Véase [<span class="nt">licencia</span>](<span class="na">../acercade/licencia.md</span>) del proyecto para más detalles.
+</code></pre></div>
+<p>Pero hay una situación en la que esto no funciona. Markdown permite incluir texto HTML "en bruto" en nuestros documentos. Esto implica que los enlaces escritos en ese formato deben incluir una URL en formato html. No es posible usar referencias a ficheros con extensión <code>.md</code> y pretender que las convierta al fichero final <code>.html</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;otroDocumento.html&quot;</span><span class="p">&gt;</span>texto<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Para incluir imágenes, utilizar la sintaxis <em>markdown</em> habitual:</p>
+<div class="highlight"><pre><span></span><code>![<span class="nt">imagen</span>](<span class="na">img/pantalla.png</span>)
+</code></pre></div>
+<p>Si activamos en el archivo de configuración la extensión "toc", que se utiliza para crear "tablas de contenido", podemos beneficiarnos de los IDs generados para cada línea de cabecera en el documento. Añadiendo un carácter <code>#</code> entre el nombre del documento y el de la sección podemos enlazar a secciones concretas:</p>
+<div class="highlight"><pre><span></span><code>Véase [<span class="nt">licencia</span>](<span class="na">acercade.md#licencia</span>) del proyecto para más detalles.
+</code></pre></div>
+<p>Los IDs se crean deduciéndolos del texto de la cabecera, convirtiéndolo a minúsculas y sustituyendo caracteres no permitidos (incluyendo espacios) por guiones. Varios guiones consecutivos se eliminarán para dejar uno solo.</p>
+<h2 id="enlaces-a-secciones">Enlaces a secciones<a class="headerlink" href="#enlaces-a-secciones" title="Permanent link">&para;</a></h2>
+<p>Podemos insertar un enlace a la línea de cabecera de una sección, si escribimos entre corchetes su texto. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="gu">## Acerca de este documento</span>
+
+... texto regular
+</code></pre></div>
+<p>Y en algún otro lugar:</p>
+<div class="highlight"><pre><span></span><code>Véase [acerca-de-este-documento]
+</code></pre></div>
+<p>MkDocs genera un identificador para cada elemento <code>&lt;h1&gt;</code> ... <code>&lt;h6&gt;</code> que consiste en el texto de la cabecera, en minúsculas, suprimiendo los espacios en blanco y sustituyéndolos por guiones.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="002CrearProyecto.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Crear cuaderno">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Crear cuaderno
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="004PyMarkdown.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Python Markdown">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Python Markdown
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Consentimiento de cookies</h4>
+<p>Este sitio web utiliza cookies para reconocer sus visitas repetidas y sus preferencias,  así como para medir la efectividad de nuestra documentación y si los usuarios encuentran lo que están buscando. Con su consentimiento, nos está ayudando a mejorar nuestra documentación.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.footer", "toc.integrate", "navigation.top", "navigation.sections"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="javascripts/tables.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
