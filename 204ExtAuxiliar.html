@@ -635,6 +635,8 @@
       
         
       
+        
+      
     
     
     
@@ -988,6 +990,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="211ExtSnnipets.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archivos externos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1219,11 +1242,10 @@ massa, nec semper lorem quam in massa.</p>
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 </code></pre></div>
-<p>Para hacer uso de las admoniciones desplegables, debemos activar la extensión <code>details</code> en el archivo <code>mkdocs.yml</code>:</p>
+<p>Para hacer uso de las admoniciones desplegables, debemos activar la extensión <a href="https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/details/">details</a> en el archivo <code>mkdocs.yml</code>:</p>
 <div class="highlight"><pre><span></span><code>markdown_extensions:
   - pymdownx.details
 </code></pre></div>
-<p>Vemos que la extensión <code>details</code> no forma parte de <a href="https://python-markdown.github.io/">Python Markdown</a>, sino de <a href="https://facelessuser.github.io/pymdown-extensions/">PyMdown Extensions</a>.</p>
 <h2 id="tabla-de-contenido">Tabla de contenido<a class="headerlink" href="#tabla-de-contenido" title="Permanent link">&para;</a></h2>
 <p>MkDocs es capaz de insertar en la página una tabla de contenido que construye a partir de las líneas de cabecera.  En nuestro documento, allí donde queramos la tabla de contenido, escribiremos:</p>
 <div class="highlight"><pre><span></span><code>Tabla de contenido:
@@ -1234,19 +1256,7 @@ Texto del documento.
 </code></pre></div>
 <div class="admonition note inline end">
 <p class="admonition-title">Tabla de contenido:</p>
-<div class="toc">
-<ul>
-<li><a href="#contenido-auxiliar">Contenido auxiliar</a><ul>
-<li><a href="#admoniciones">Admoniciones</a></li>
-<li><a href="#formato-de-las-admoniciones">Formato de las admoniciones</a></li>
-<li><a href="#admoniciones-al-costado">Admoniciones al costado</a></li>
-<li><a href="#admoniciones-desplegables">Admoniciones desplegables</a></li>
-<li><a href="#tabla-de-contenido">Tabla de contenido</a></li>
-<li><a href="#pie-de-pagina">Pie de página</a></li>
-</ul>
-</li>
-</ul>
-</div>
+<p><a href="https://python-markdown.github.io/extensions/toc/">TOC</a></p>
 </div>
 <p>Como ejemplo, véase el efecto que tiene una tabla de contenido incluida dentro de una admonición. Esto se ha logrado anteponiendo a este párrafo:</p>
 <div class="codehilite"><pre><span></span><code><span class="err">!!!</span><span class="w"> </span><span class="n">note</span><span class="w"> </span><span class="n">inline</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="ss">&quot;Tabla de contenido:&quot;</span>

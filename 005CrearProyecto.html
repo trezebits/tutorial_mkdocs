@@ -510,6 +510,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#anatomia-del-sitio-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anatomía del sitio web
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -731,6 +740,8 @@
   
     
     
+      
+        
       
         
       
@@ -1013,6 +1024,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="211ExtSnnipets.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archivos externos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1230,7 +1262,12 @@ Para ver la documentación de MkDocs visite [<span class="nt">mkdocs.org</span>]
 </code></pre></div>
 
 <p>significa que nos hemos situado en la carpeta equivocada. Típicamente, el directorio de trabajo se suele mostrar a la izquierda del <em>prompt</em>. Revisarlo y repetir el comando <code>cd</code>.</p>
-<p>Si todo va bien, se generan los archivos HTML en una nueva carpeta <code>site</code>, dentro de la carpeta de proyecto. El contenido de esta carpeta es lo que vamos a subir al servidor, pero por ahora podemos examinarlo en nuestra computadora. El documento principal es <code>index.html</code>. Haciendo doble clic sobre el mismo, se visualizará en la ventana del navegador web:</p>
+<p>Dependiendo de nuestro sistema operativo y la instalación, es posible que, en el terminal de comandos, la palabra <code>mkdocs</code> no sea reconocida como comando. <a href="https://www.mkdocs.org">MkDocs</a> es un módulo desarrollado en Python, por lo que también se puede ejecutar con:</p>
+<div class="codehilite"><pre><span></span><code>$<span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>mkdocs<span class="w"> </span>build
+</code></pre></div>
+
+<p>Es decir, ejecutamos el intérprete de Python pasándole un módulo a ejecutar (opción <code>-m</code>) llamado <code>mkdocs</code>.</p>
+<p>Si finalmente todo va bien, se generan los archivos HTML en una nueva carpeta <code>site</code>, dentro de la carpeta de proyecto. El contenido de esta carpeta es lo que vamos a subir al servidor, pero por ahora podemos examinarlo en nuestra computadora. El documento principal es <code>index.html</code>. Haciendo doble clic sobre el mismo, se visualizará en la ventana del navegador web:</p>
 <p><img alt="" src="img/005MkDocs.png" /></p>
 <p>Los colores, tipo de letra, presentación, etc. los añade automáticamente <code>MkDocs</code>. Véase que el índice que hay a la izquierda se construye a partir de los párrafos de encabezado de sección, que en formato <em>markdown</em> se marcan con símbolos <code>#</code>.</p>
 <h2 id="formato-markdown">Formato markdown<a class="headerlink" href="#formato-markdown" title="Permanent link">&para;</a></h2>
@@ -1348,6 +1385,33 @@ nav:
 
 <p>El servidor se mantiene activo en segundo plano, y cada vez que guardemos los cambios de cualquier archivo, se regenerarán las páginas. Podemos tener abiertas las dos ventanas, el editor y el navegador web, y los cambios en una se reflejarán en la otra. En el navegador, introducir la URL indicada, en este ejemplo, <code>http://127.0.0.1:8000/miproyecto/</code>.</p>
 <p>El servidor MkDocs se detiene seleccionando la ventana del <em>Terminal de comandos</em> y pulsando <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span> (o la tecla establecida en nuestro sistema operativo para interrumpir la ejecución de comandos).</p>
+<h2 id="anatomia-del-sitio-web">Anatomía del sitio web<a class="headerlink" href="#anatomia-del-sitio-web" title="Permanent link">&para;</a></h2>
+<p>El comando que hemos ejecutado:</p>
+<div class="codehilite"><pre><span></span><code>$<span class="w"> </span>mkdocs<span class="w"> </span>build
+</code></pre></div>
+
+<p>crea una carpeta <code>/site</code> con todos los archivos que forman nuestro sitio web, y que vamos a subir al servidor. A medida que vayamos desarrollando proyectos más elaborados, el contenido de <code>/site</code> se irá volviendo más complejo.</p>
+<p>Veamos un resumen del contenido básico de la carpeta:</p>
+<ul>
+<li>
+<p>una lista de archivos <code>html</code>, uno por cada documento <em>markdown</em>. Serán nuestras futuras páginas web. El archivo principal es <code>index.html</code></p>
+</li>
+<li>
+<p>una página añadida de forma automática, <code>404.html</code>. Será lo que se muestre cuando un enlace hace referencia a una página que no existe</p>
+</li>
+<li>
+<p>una carpeta <code>/assets/images</code> con iconos y contenidos gráficos</p>
+</li>
+<li>
+<p>una carpeta <code>/assets/javascripts</code> con los scripts añadidos por <a href="https://www.mkdocs.org">MkDocs</a>, proporcionando diferentes funcionalidades a nuestro sitio web</p>
+</li>
+<li>
+<p>una carpeta <code>/assets/stylesheets</code> con hojas de estilo y formatos de presentación</p>
+</li>
+<li>
+<p>una carpeta <code>/search</code> con los elementos que utiliza la función de búsqueda <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288"/></svg></span> disponible en la barra superior de cada página.</p>
+</li>
+</ul>
 
 
 

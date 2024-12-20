@@ -631,6 +631,8 @@
       
         
       
+        
+      
     
     
     
@@ -890,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="211ExtSnnipets.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archivos externos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1024,6 +1047,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#subir-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subir contenido
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configurar-como-github-pages" class="md-nav__link">
     <span class="md-ellipsis">
       Configurar como GitHub Pages
@@ -1069,16 +1101,15 @@
 <p>Yo utilizo <a href="https://github.com">GitHub</a> como repositorio, y hago uso de un servicio llamado <a href="https://pages.github.com">GitHub Pages</a>, que permite visualizar la documentación en forma de sitio web. Para subir los documentos utilizo <a href="https://github.com/apps/desktop">GitHub Desktop</a>, un programa que podemos descargar e instalar en nuestro ordenador, y cuyo uso requiere de que tengamos instalado un programa llamado <em>Git</em>.</p>
 <h2 id="acerca-de-git">Acerca de Git<a class="headerlink" href="#acerca-de-git" title="Permanent link">&para;</a></h2>
 <p>Git es un programa concebido para el control de versiones de nuestros documentos subidos a repositorios remotos. Resulta especialmente útil en el caso de proyectos en los que participan varias personas, facilitando la coordinación del trabajo en grupo. </p>
-<p>Git es un software <em>open source</em>, concebido inicialmente por <em>Linus Torvalds</em>, creador del sistema operativo Linux.</p>
+<p>Git es un software <em>open source</em>, concebido inicialmente por <em>Linus Torvalds</em>, el creador del sistema operativo Linux.</p>
 <p>Vamos a utilizar <em>Git</em> para subir nuestros documentos al repositorio de páginas web. Podemos comprobar que nuestro sistema operativo lo trae de serie si abrimos un terminal de comandos e introducimos:</p>
-<div class="codehilite"><pre><span></span><code>git --version
+<div class="codehilite"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>--version
 </code></pre></div>
 
 <p>Si necesitamos instalarlo en nuestro equipo, podemos ir al repositorio de software de nuestro sistema operativo, o bien descargarlo de la <a href="https://git-scm.com">página web oficial de Git</a>.</p>
 <p>Git es un software para profesionales, complejo y con muchas funcionalidades que posiblemente no necesitaremos. En todo caso tenemos un libro sobre la materia de libre acceso y descarga en <a href="https://git-scm.com/book/">esta página</a>.</p>
 <h2 id="acerca-de-github">Acerca de GitHub<a class="headerlink" href="#acerca-de-github" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com">GitHub</a> es una plataforma de desarrollo colaborativo que permite alojar proyectos, tanto personales como comunitarios, utilizando el sistema de control de versiones Git. </p>
-<p>Cada usuario puede tener uno o varios repositorios, de forma que cada uno de ellos sirve para alojar un proyecto.</p>
+<p><a href="https://github.com">GitHub</a> es una plataforma de desarrollo colaborativo que permite alojar proyectos, tanto personales como comunitarios, utilizando el sistema de control de versiones Git. Cada usuario puede tener uno o varios repositorios, de forma que cada uno de ellos sirve para alojar un proyecto.</p>
 <p>Desde junio de 2018, GitHub es propiedad de Microsoft. Aunque esto produjo ciertos recelos iniciales, GitHub continúa siendo una plataforma importante para proyectos de código abierto.</p>
 <p>Para registrarnos como usuarios necesitamos una cuenta de correo. Acudimos a la página principal de <em>GitHub</em>, <a href="https://github.com">https://github.com</a>, donde veremos dos enlaces:</p>
 <ul>
@@ -1089,8 +1120,7 @@
 <p>Para aprender a manejarnos con <code>GitHub</code> encontraremos los tutoriales en <a href="https://docs.github.com/">https://docs.github.com/</a></p>
 <h2 id="iniciar-sesion-en-github">Iniciar sesión en GitHub<a class="headerlink" href="#iniciar-sesion-en-github" title="Permanent link">&para;</a></h2>
 <p>En la página principal de <em>GitHub</em>, <a href="https://github.com">https://github.com</a>, pulsamos en el enlace <code>Sign In</code>. Se nos pedirá nuestro nombre de usuario o correo electrónico y la contraseña.</p>
-<p>Tras iniciar la sesión, vemos que en todo momento tenemos un icono en la esquina superior derecha con nuestra imagen de usuario. Pulsando sobre ese icono, veremos un menú de opciones.</p>
-<p>Algunas de estas opciones son:</p>
+<p>Tras iniciar la sesión, vemos que en todo momento tenemos un icono en la esquina superior derecha con nuestra imagen de usuario. Pulsando sobre ese icono, veremos un menú de opciones. Algunas de ellas son:</p>
 <ul>
 <li>Sign out - cierra la sesión y sale de GitHub</li>
 <li>GitHub docs - documentación de <em>GHitHub</em></li>
@@ -1110,51 +1140,69 @@
 </ul>
 </li>
 </ul>
+<p>Una vez dentro del repositorio, en la barra superior tendremos una serie de etiquetas. Las que más vamos a utilizar son:</p>
+<ul>
+<li>
+<p><em>Code</em> muestra la lista de archivos en el repositorio. Si tenemos un archivo <code>README.md</code> se muestra su contenido debajo de la lista, como resumen explicativo del repositorio.</p>
+</li>
+<li>
+<p><em>Settings</em> permite configurar el repositorio (¡incluida su eliminación!).</p>
+</li>
+</ul>
+<p>Una vez que tenemos una cuenta en <a href="https://github.com">GitHub</a> y hemos creado un repositorio para nuestro proyecto, vamos a volver al entorno local de nuestro ordenador y preparar la subida de archivos.</p>
 <h2 id="compilar-el-proyecto">Compilar el proyecto<a class="headerlink" href="#compilar-el-proyecto" title="Permanent link">&para;</a></h2>
-<p>Una vez redactados nuestros documentos, tenemos que compilarlos y crear un sitio web en nuestro ordenador. Lo primero es revisar el archivo de configuración <code>mkdocs.yml</code> y establecer la carpeta donde vamos a dejar los documentos traduciodos a formato html:</p>
-<div class="highlight"><pre><span></span><code>docs_dir: docs
-site_dir: site
-</code></pre></div>
-<p>Seguidamente nos situamos en la carpeta principal del proyecto y lo compilamos con el comando:</p>
-<div class="codehilite"><pre><span></span><code>python3 -m mkdocs build
+<p>Tras redactar nuestros documentos, tenemos que compilarlos y crear un sitio web en nuestro ordenador:</p>
+<div class="codehilite"><pre><span></span><code>mkdocs build
 </code></pre></div>
 
-<p>Tras obtener los archivos del sitio web en la carpeta <code>site</code>, vamos a añadir algún archivo que queramos incluir en la subida. Creamos un archivo llamado <code>README.md</code> con una descripción del proyecto. </p>
-<p>Añadimos un archivo <code>.gitignore.md</code> con una lista de archivos que no queremos subir. Recuérdese que los archivos con un prefijo <code>.</code> se consideran como ocultos. En esa lista de archivos a ignorar, ponemos:</p>
+<p>Tras obtener los archivos del sitio web en la carpeta <code>site</code>, vamos a añadir algún archivo que queramos incluir en la subida:</p>
+<ul>
+<li>
+<p>creamos un archivo llamado <code>README.md</code> con una descripción del proyecto. </p>
+</li>
+<li>
+<p>añadimos un archivo <code>.gitignore.md</code> con una lista de archivos que no queremos subir. Recuérdese que, en Linux/Mac, los archivos con un prefijo <code>.</code> se consideran como ocultos. En esa lista de archivos a ignorar, ponemos:</p>
 <div class="codehilite"><pre><span></span><code><span class="na">.DS_Store</span>
 <span class="na">.gitignore</span>
 </code></pre></div>
 
-<p>No voy a subir el propio archivo <code>.gitignore</code>. También excluyo <code>.DS_Store</code>, un archivo oculto en las carpetas de los Mac, que sirve para controlar la visualización del contenido de la carpeta en el ordenador.</p>
+</li>
+</ul>
+<p>No voy a subir el propio archivo <code>.gitignore</code>. Por otra parte, como yo tengo un Mac de Apple, también excluyo <code>.DS_Store</code>, que es un archivo oculto en las carpetas de los Mac para controlar la visualización del contenido de la carpeta en el ordenador.</p>
 <p>Una vez compilada la documentación, nos situamos en la carpeta que contiene los archivos a subir:</p>
-<div class="codehilite"><pre><span></span><code>cd site
+<div class="codehilite"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>site
 </code></pre></div>
 
 <p>Seguidamente hay que configurarlo como repositorio <em>git</em>:</p>
-<div class="codehilite"><pre><span></span><code>git init
+<div class="codehilite"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>init
 </code></pre></div>
 
 <p>Esto crea en la carpeta <code>site</code> una carpeta oculta que se llama <code>.git</code>, que contiene información para coordinar la transferencia de documentos.</p>
-<p>Podemos crear un archivo de comandos para automatizar todo el proceso. En Windows, será un archivo de texto con la extensión <code>.bat</code>. Basta con hacer doble clic sobre el mismo para que se ejecute. En Mac, pulsamos con el botón secundario del ratón sobre ese archivo de texto, seleccionamos "<em>Obtener Información</em>, y establecemos <em>Abrir con: Terminal</em>, para que siempre que pulsemos sobre el archivo se ejecute en una ventana de Terminal de comandos.</p>
+<p>Podemos crear un archivo de comandos para automatizar todo el proceso. En Windows, será un archivo de texto con la extensión <code>.bat</code>. Basta con hacer doble clic sobre el mismo para que se ejecute. </p>
+<p>En los ordenadores Mac, para poder ejecutarlo tenemos que pulsar con el botón secundario del ratón sobre ese archivo de texto, seleccionar la opción "<em>Obtener Información</em>, y establecer <em>Abrir con: Terminal</em>, para que siempre que pulsemos sobre el archivo se ejecute en una ventana de Terminal de comandos.</p>
 <p>El texto del script puede ser algo así como:</p>
 <div class="highlight"><pre><span></span><code>cd /home/nombreusuario/Documents/proyectos/nombreproyecto
-python3 -m mkdocs build
+mkdocs build
 cp README.md site/README.md
 cp ignorar.md site/.gitignore
 cd site
 git init
 </code></pre></div>
+<p>Véase que en la carpeta raiz de cada proyecto tenemos dos archivos <code>README.md</code> y <code>.gitignore</code>, que copiamos a la carpeta <code>/site</code> en cada compilación.</p>
 <h2 id="github-desktop">GitHub Desktop<a class="headerlink" href="#github-desktop" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com/apps/desktop">GitHub Desktop</a> es un programa que permite interaccionar con el repositorio desde nuestro ordenador. Una vez descargado, al ejecutarse muestra lo siguiente:</p>
+<p><a href="https://github.com/apps/desktop">GitHub Desktop</a> es un programa que permite interaccionar con el repositorio desde nuestro ordenador. Una vez descargado e instalado, al ejecutarse muestra lo siguiente:</p>
 <p><img alt="" src="img/901Desktop001.png" /></p>
-<p>Pulsamos sobre el botón <code>sign in</code>. Al conectarnos a <a href="https://github.com">GitHub</a> en el navegador web, se nos pedirá que activemos la autorización para que <a href="https://github.com/apps/desktop">GitHub Desktop</a> acceda al repositorio.</p>
-<p>Seguimos el proceso de configuración:</p>
+<p>Pulsamos sobre el botón <code>sign in</code>. Al conectarnos a <a href="https://github.com">GitHub</a> en el navegador web, se nos pedirá que activemos la autorización para que <a href="https://github.com/apps/desktop">GitHub Desktop</a> acceda a nuestros repositorios.</p>
+<p>Seguimos con el proceso de configuración e introducimos nuestras credenciales de <a href="https://github.com">GitHub</a>:</p>
 <p><img alt="" src="img/901Desktop002.png" /></p>
 <p>Una vez configurado, cada vez que iniciemos <a href="https://github.com/apps/desktop">GitHub Desktop</a> tendremos un resumen de nuestros repositorios. Pulsamos en <em>Add repository from local drive</em>:</p>
 <p><img alt="" src="img/901Desktop003.png" /></p>
-<p>Resumen del repositorio:</p>
+<p>Vemos un resumen del repositorio. En la esquina superior izquierda tenemos una lista desplegable para seleccionar otros repositorios o crear uno nuevo:</p>
 <p><img alt="" src="img/901Desktop004.png" /></p>
 <p>Creamos el repositorio remoto pulsando en <em>Publish branch</em>.</p>
+<h2 id="subir-contenido">Subir contenido<a class="headerlink" href="#subir-contenido" title="Permanent link">&para;</a></h2>
+<p>Una vez creado el repositorio en <a href="https://github.com">GitHub</a> y enlazado desde <a href="https://github.com/apps/desktop">GitHub Desktop</a>, la primera vez que vayamos a subir contenidos, pulsar en el enlace <em>Publish branch</em>.</p>
+<p>En sucesivas actualizaciones, </p>
 <h2 id="configurar-como-github-pages">Configurar como GitHub Pages<a class="headerlink" href="#configurar-como-github-pages" title="Permanent link">&para;</a></h2>
 <p>Una vez subida la documentación, accedemos a GitHub con nuestra contraseña de usuario y verificamos el contenido del repositorio.</p>
 <p>El siguiente paso es activar <em>GitHub Pages</em>  para que los documentos sean visibles como páginas web. Hacer lo siguiente:</p>

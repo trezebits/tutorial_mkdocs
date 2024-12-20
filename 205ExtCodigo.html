@@ -635,6 +635,8 @@
       
         
       
+        
+      
     
     
     
@@ -901,15 +903,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#archivos-externos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Archivos externos
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1015,6 +1008,27 @@
   
   <span class="md-ellipsis">
     Ayuda emergente
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="211ExtSnnipets.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archivos externos
   </span>
   
 
@@ -1347,40 +1361,6 @@ class HelloWorld {
      }
 ```
 </code></pre></div>
-<h2 id="archivos-externos">Archivos externos<a class="headerlink" href="#archivos-externos" title="Permanent link">&para;</a></h2>
-<p>La extensión <a href="https://facelessuser.github.io/pymdown-extensions/extensions/snippets/">snippets</a> permite incluir texto de otros ficheros en el actual. Si en una línea del documento escribimos:</p>
-<div class="highlight"><pre><span></span><code>--8&lt;-- &quot;miArchivoExterno.txt&quot;
-</code></pre></div>
-<p>... MkDocs sustituirá esa línea por el texto del fichero externo, como paso previo antes de transformar <em>markdown</em> a HTML.</p>
-<p>El nombre del fichero ha de ir entrecomillado y precedido por la marca <code>--8&lt;--</code>. Su ubicación se establece con referencia al directorio raíz de proyecto (allí donde se encuentra <code>mkdocs.yml</code>:</p>
-<div class="highlight"><pre><span></span><code>--8&lt;-- &quot;docs/mifichero.md&quot;
-</code></pre></div>
-<p>Esta característica solo tiene efecto si esta marca se escribe en línea aparte (no tiene efecto como parte de un párrafo), y se activa en el archivo de configuración <code>mkdics.yml</code>:</p>
-<div class="highlight"><pre><span></span><code>markdown_extensions:
-  - pymdownx.snippets
-</code></pre></div>
-<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/snippets/">snippets</a> resulta muy útil para mantener los ejemplos de un manual técnico en ficheros separados:</p>
-<div class="highlight"><pre><span></span><code><span class="sb">```java</span><span class="w"> </span>title=&quot;Programa de ejemplo 1.1&quot;
-
-<span class="o">--</span><span class="mi">8</span><span class="o">&lt;--</span><span class="w"> </span><span class="s">&quot;ejemplos/programa1.1.txt&quot;</span>
-
-<span class="sb">```</span>
-</code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Acerca de la marca <code>--8&lt;--</code></p>
-<p>Curiosa marca <code>--8&lt;--</code>, ¿no? En realidad representa la opción de cortar y pegar texto. Se trata de unas tijeras &nbsp;8&lt;&nbsp; entre guiones.</p>
-</div>
-<p>Al redactar este cuaderno, me he encontrado con que el texto <code>--8&lt;--</code> no se mostraba como parte de los ejemplos, ya que <a href="https://facelessuser.github.io/pymdown-extensions/extensions/snippets/">snippets</a> lo interpretaba como mi intención de insertar un archivo. Podemos desactivar el efecto anteponiendo un punto y coma <code>;--8&lt;--</code>. <a href="https://facelessuser.github.io/pymdown-extensions/extensions/snippets/">Snippets</a> respetará la marca como texto regular y ocultará el carácter de punto coma.</p>
-<p>¿Como resuelve <a href="https://facelessuser.github.io/pymdown-extensions/extensions/snippets/">snippets</a> la inclusión de archivos? hay dos aspectos a tener en cuenta:</p>
-<ul>
-<li>
-<p>Toda inclusión se hace antes de la transformación a HTML. La sintaxis <em>markdown</em> de los archivos incluidos pasará a formar parte del conjunto a procesar.</p>
-</li>
-<li>
-<p>El archivo externo incluido puede, a su vez, tener otras marcas <code>--8&lt;--</code>, lo que hace que se produzca una inclusión de archivos en cascada, es decir, nuestro archivo actual incluye al archivo X, este al archivo Y, y este a su vez, al archivo Z.</p>
-<p>Esto puede dar lugar a un círculo cerrado, cuando X incluye a Y, este a Z, y este último a X. <a href="https://facelessuser.github.io/pymdown-extensions/extensions/snippets/">Snippets</a> lo evita ignorando la inclusión de archivos que ya han sido incluidos.</p>
-</li>
-</ul>
 
 
 
