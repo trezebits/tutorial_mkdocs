@@ -1029,6 +1029,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ramas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ramas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#compilar-el-proyecto" class="md-nav__link">
     <span class="md-ellipsis">
       Compilar el proyecto
@@ -1047,9 +1056,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#subir-contenido" class="md-nav__link">
+  <a href="#actualizaciones" class="md-nav__link">
     <span class="md-ellipsis">
-      Subir contenido
+      Actualizaciones
     </span>
   </a>
   
@@ -1134,7 +1143,7 @@
 <li>Nombre del repositorio</li>
 <li>Si es público o privado</li>
 <li>Si queremos iniciarlo vacío o con tres posibles archivos:<ul>
-<li>README.md - Un resumen explicativo de lo que contiene el repositorio</li>
+<li>README.md - Un resumen explicativo de lo que contiene el repositorio. es un archivo de texto <em>markdown</em>.</li>
 <li><code>.gitignore</code> - Se usará al transferir los archivos desde nuestro ordenador. Contiene una lista de ficheros o carpetas que no deseamos incluir en la transferencia</li>
 <li>Licencia - Tipo de licencia aplicable a nuestros contenidos. Ver <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository">licencias</a></li>
 </ul>
@@ -1149,8 +1158,10 @@
 <p><em>Settings</em> permite configurar el repositorio (¡incluida su eliminación!).</p>
 </li>
 </ul>
-<p>Una vez que tenemos una cuenta en <a href="https://github.com">GitHub</a> y hemos creado un repositorio para nuestro proyecto, vamos a volver al entorno local de nuestro ordenador y preparar la subida de archivos.</p>
+<h2 id="ramas">Ramas<a class="headerlink" href="#ramas" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com">GitHub</a>  es un portal colaborativo donde un equipo de personas pueden trabajar en el mismo proyecto. Es posible mantener varias versiones de un repositorio, llamadas "ramas". Al visualizar la lista de archivos, podemos seleccionar la rama (branch) deseada. Por ahora, nos arreglaremos con la rama "main".</p>
 <h2 id="compilar-el-proyecto">Compilar el proyecto<a class="headerlink" href="#compilar-el-proyecto" title="Permanent link">&para;</a></h2>
+<p>Una vez que tenemos una cuenta en <a href="https://github.com">GitHub</a> y hemos creado un repositorio para nuestro proyecto, vamos a volver al entorno local de nuestro ordenador y preparar la subida de archivos.</p>
 <p>Tras redactar nuestros documentos, tenemos que compilarlos y crear un sitio web en nuestro ordenador:</p>
 <div class="codehilite"><pre><span></span><code>mkdocs build
 </code></pre></div>
@@ -1179,7 +1190,7 @@
 
 <p>Esto crea en la carpeta <code>site</code> una carpeta oculta que se llama <code>.git</code>, que contiene información para coordinar la transferencia de documentos.</p>
 <p>Podemos crear un archivo de comandos para automatizar todo el proceso. En Windows, será un archivo de texto con la extensión <code>.bat</code>. Basta con hacer doble clic sobre el mismo para que se ejecute. </p>
-<p>En los ordenadores Mac, para poder ejecutarlo tenemos que pulsar con el botón secundario del ratón sobre ese archivo de texto, seleccionar la opción "<em>Obtener Información</em>, y establecer <em>Abrir con: Terminal</em>, para que siempre que pulsemos sobre el archivo se ejecute en una ventana de Terminal de comandos.</p>
+<p>En los ordenadores Mac, para poder ejecutarlo tenemos que pulsar con el botón secundario del ratón sobre ese archivo de texto, seleccionar la opción "<em>Obtener Información</em>", y establecer <em>Abrir con: Terminal</em>, para que siempre que pulsemos sobre el archivo se ejecute en una ventana de Terminal de comandos.</p>
 <p>El texto del script puede ser algo así como:</p>
 <div class="highlight"><pre><span></span><code>cd /home/nombreusuario/Documents/proyectos/nombreproyecto
 mkdocs build
@@ -1190,7 +1201,7 @@ git init
 </code></pre></div>
 <p>Véase que en la carpeta raiz de cada proyecto tenemos dos archivos <code>README.md</code> y <code>.gitignore</code>, que copiamos a la carpeta <code>/site</code> en cada compilación.</p>
 <h2 id="github-desktop">GitHub Desktop<a class="headerlink" href="#github-desktop" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com/apps/desktop">GitHub Desktop</a> es un programa que permite interaccionar con el repositorio desde nuestro ordenador. Una vez descargado e instalado, al ejecutarse muestra lo siguiente:</p>
+<p><a href="https://github.com/apps/desktop">GitHub Desktop</a> es un programa que permite interaccionar con el repositorio remoto desde nuestro ordenador. Una vez descargado e instalado, al ejecutarse muestra lo siguiente:</p>
 <p><img alt="" src="img/901Desktop001.png" /></p>
 <p>Pulsamos sobre el botón <code>sign in</code>. Al conectarnos a <a href="https://github.com">GitHub</a> en el navegador web, se nos pedirá que activemos la autorización para que <a href="https://github.com/apps/desktop">GitHub Desktop</a> acceda a nuestros repositorios.</p>
 <p>Seguimos con el proceso de configuración e introducimos nuestras credenciales de <a href="https://github.com">GitHub</a>:</p>
@@ -1199,13 +1210,25 @@ git init
 <p><img alt="" src="img/901Desktop003.png" /></p>
 <p>Vemos un resumen del repositorio. En la esquina superior izquierda tenemos una lista desplegable para seleccionar otros repositorios o crear uno nuevo:</p>
 <p><img alt="" src="img/901Desktop004.png" /></p>
-<p>Creamos el repositorio remoto pulsando en <em>Publish branch</em>.</p>
-<h2 id="subir-contenido">Subir contenido<a class="headerlink" href="#subir-contenido" title="Permanent link">&para;</a></h2>
-<p>Una vez creado el repositorio en <a href="https://github.com">GitHub</a> y enlazado desde <a href="https://github.com/apps/desktop">GitHub Desktop</a>, la primera vez que vayamos a subir contenidos, pulsar en el enlace <em>Publish branch</em>.</p>
-<p>En sucesivas actualizaciones, veremos un resumen de archivos en nuestro entorno local, indicando los cambios realizados:</p>
+<p>hacemos la primera subida de archivos pulsando en <em>Publish branch</em>.</p>
+<h2 id="actualizaciones">Actualizaciones<a class="headerlink" href="#actualizaciones" title="Permanent link">&para;</a></h2>
+<p>Tras la primera subida de documentos, nuestro proyecto sufrirá modificaciones ¡Importante! Nunca debemos modificar los archivos directamente en el repositorio remoto. Hacerlo en local y subir los cambios, para un mejor control.</p>
+<p>Al abrir <a href="https://github.com/apps/desktop">GitHub Desktop</a> y seleccionar un proyecto, veremos un resumen de archivos en nuestro entorno local, indicando los cambios realizados y pendientes de subir:</p>
 <p><img alt="" src="img/901Desktop005.png" /></p>
+<p>Para actualizar el repositorio remoto, hacer lo siguiente:</p>
+<ul>
+<li>
+<p>bajo la lista de archivos, rellenar la casilla "Summary" con el texto de la operación a realizar. Por ejemplo, "actualización". Los archivos modificados en el repositorio remoto se mostrarán con ese texto.</p>
+</li>
+<li>
+<p>pulsar en el botón <code>commit</code></p>
+</li>
+<li>
+<p>pulsar en el botón <code>Push origin</code></p>
+</li>
+</ul>
 <h2 id="configurar-como-github-pages">Configurar como GitHub Pages<a class="headerlink" href="#configurar-como-github-pages" title="Permanent link">&para;</a></h2>
-<p>Una vez subida la documentación, accedemos a GitHub con nuestra contraseña de usuario y verificamos el contenido del repositorio.</p>
+<p>Una vez subida la documentación, accedemos a GitHub con nuestra contraseña de usuario y verificamos el contenido del repositorio. El contenido del archivo <code>README.md</code> se visualizará como resumen del proyecto.</p>
 <p>El siguiente paso es activar <em>GitHub Pages</em>  para que los documentos sean visibles como páginas web. Hacer lo siguiente:</p>
 <ul>
 <li>Entrar en el repositorio. Veremos la lista de archivos subidos</li>
@@ -1220,7 +1243,7 @@ git init
 </blockquote>
 <p>Pasado un breve lapso de tiempo, si refrescamos la página, veremos el mensaje:</p>
 <blockquote>
-<p>"Your site is published at "https://usuario.github.io/repositorio/"</p>
+<p>"Your site is live at "https://usuario.github.io/repositorio/"</p>
 </blockquote>
 <p>Gracias a los servicios de <em>GitHub Pages</em>, nuestra documentación será accesible mediante la URL:</p>
 <div class="codehilite"><pre><span></span><code>https://usuario.github.io/nombreproyecto/
@@ -1232,9 +1255,36 @@ git init
 <div class="codehilite"><pre><span></span><code>https://usuario.github.io/nombrerepositorio/
 </code></pre></div>
 
-<p>Podemos navegar de un proyecto a otro insertando enlaces con estas URLs.</p>
-<p>Podemos crear una página principal accesible mediante <code>https://usuario.github.io/</code>. Para ello, debemos alojarla en un repositorio llamado <code>https://usuario.github.io/</code> (cambiando <em>usuario</em> por nuestro nombre). </p>
-<p>Por ejemplo, mi página principal es un documento alojado en un repositorio alojado en <code>https://github.com/trezebits/trezebits.github.io</code>.</p>
+<p>Podemos crear una página principal accesible bajo el nombre:</p>
+<div class="codehilite"><pre><span></span><code>https://usuario.github.io/
+</code></pre></div>
+
+<p>Para ello, debemos alojarla en un repositorio llamado <code>usuario.github.io</code>, incluyendo los puntos en el nombre y cambiando <em>usuario</em> por nuestro nombre. </p>
+<p>Por ejemplo, en mi caso:</p>
+<ul>
+<li>
+<p>Página de proyecto: </p>
+<ul>
+<li>URL: <a href="https://trezebits.github.io/tutorial_mkdocs/">https://trezebits.github.io/tutorial_mkdocs/</a></li>
+<li>Repositorio: <a href="https://github.com/trezebits/tutorial_mkdocs/">https://github.com/trezebits/tutorial_mkdocs/</a></li>
+</ul>
+</li>
+<li>
+<p>Página principal, con índice de cuadernos:</p>
+<ul>
+<li>URL: <a href="https://trezebits.github.io/">https://trezebits.github.io/</a></li>
+<li>Repositorio: <a href="https://github.com/trezebits/trezebits.github.io/">https://github.com/trezebits/trezebits.github.io/</a></li>
+</ul>
+</li>
+</ul>
+<p>En el texto de la página principal <code>https://usuario.github.io/</code> podemos poner enlaces a cada proyecto:</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># Mi portal de documentación</span>
+
+Indice de proyectos:
+
+<span class="k">-</span><span class="w"> </span>  [<span class="nt">Proyecto 1</span>](<span class="na">&lt;https://usuario.github.io/repositorio1/&gt;</span>)
+<span class="k">-</span><span class="w"> </span>  [<span class="nt">Proyecto 2</span>](<span class="na">&lt;https://usuario.github.io/repositorio2/&gt;</span>)
+</code></pre></div>
 
 
 

@@ -1105,6 +1105,7 @@ Más texto del documento 1.
 
 <span class="sb">```</span>
 </code></pre></div>
+<p>La carpeta hace referencia a una que cuelga del directorio raíz del proyecto. No ponemos los archivos en la carpeta <code>/docs</code> para evitar que se generen archivos HTML para cada fichero. Solo queremos incluirlos en el documento principal.</p>
 <h2 id="para-crear-un-glosario-de-abreviaturas">Para crear un glosario de abreviaturas<a class="headerlink" href="#para-crear-un-glosario-de-abreviaturas" title="Permanent link">&para;</a></h2>
 <p>En el capítulo dedicado al texto emergente hemos visto la extensión <a href="https://python-markdown.github.io/extensions/abbreviations/">Abbreviations</a>, cuyo uso permite que, si en el texto hay abreviaturas, al pasar el puntero del ratón sobre las mismas, se muestre su significado. Por ejemplo:</p>
 <div class="conmarco">
@@ -1126,7 +1127,6 @@ Más texto del documento 1.
       auto_append:
         - include/glosario.md
 </code></pre></div>
-<p>En este caso, la carpeta hace referencia a una que cuelga del directorio raíz del proyecto.</p>
 <h2 id="para-crear-una-lista-de-enlaces">Para crear una lista de enlaces<a class="headerlink" href="#para-crear-una-lista-de-enlaces" title="Permanent link">&para;</a></h2>
 <p>Nótese que, a lo largo de las páginas de este cuaderno, incluimos enlaces varios a las mismas páginas:</p>
 <ul>
@@ -1143,7 +1143,7 @@ Más texto del documento 1.
 <div class="highlight"><pre><span></span><code>markdown_extensions:
     - pymdownx.snippets:
           auto_append:
-             - docs/include/enlaces.md
+             - include/enlaces.md
 </code></pre></div>
 
 
