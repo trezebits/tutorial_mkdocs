@@ -45,8 +45,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -259,6 +259,8 @@
       
         
       
+        
+      
     
     
     
@@ -350,6 +352,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="004Sitio.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crear un sitio web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -364,7 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="004Herramientas.html" class="md-nav__link">
+      <a href="005Herramientas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -384,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="005CrearProyecto.html" class="md-nav__link">
+      <a href="006CrearProyecto.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1080,6 +1103,165 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Personalizar
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Personalizar
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="401ConfAssets.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estilos y Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="402ConfColores.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Colores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="403ConfFuentes.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fuentes de letra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="404ConfIdioma.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Idioma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="405ConfLogos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="901GitHub.html" class="md-nav__link">
         
@@ -1365,10 +1547,15 @@ $$
 </code></pre></div>
 <p>Además de activar la extensión, en el archivo de configuración <code>mkdocs.yml</code> debemos incluir:</p>
 <div class="highlight"><pre><span></span><code>extra_javascript:
-  - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mathjax.js
 </code></pre></div>
-<p>La carpeta <code>/docs/javascripts</code> permite añadir nuestros propios scripts. Le estamos diciendo a <a href="https://squidfunk.github.io/mkdocs-material">Material for MkDocs</a> que en esa carpeta hay un archivo <code>mathjax.js</code> que hemos creado nosotros, ya que lo necesita <a href="https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/">Arithmatex</a>. Puede que no sepamos mucho sobre el lenguaje de programación <em>JavaScript</em>, pero da igual. El contenido de <code>docs/javascripts/mathjax.js</code> es el siguiente:</p>
+<p>Ya hemos visto que podemos poner un poco de programación en nuestra página web, usando el lenguaje <em>javaScript</em>. El parámetro de configuración <code>extra_javascript</code> permite indicar una lista de archivos script:</p>
+<ul>
+<li>le decimos que incorpore un archivo online</li>
+<li>añadimos nuestra propia pieza de programación, <code>/docs/javascripts/mathjax.js</code></li>
+</ul>
+<p>Tenemos que hacer de programadores informáticos y crear ese archivo <code>mathjax.js</code> Puede que no sepamos mucho sobre el lenguaje de programación <em>JavaScript</em>, pero da igual. El contenido del fichero es el siguiente texto:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">window</span><span class="p">.</span><span class="nx">MathJax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">tex</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">inlineMath</span><span class="o">:</span><span class="w"> </span><span class="p">[[</span><span class="s2">&quot;\\(&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;\\)&quot;</span><span class="p">]],</span>
