@@ -10,22 +10,28 @@
       
       
       
+        <link rel="canonical" href="https://trezebits.github.io/tutorial_mkdocs/202ExtHTML.html">
       
       
+        <link rel="prev" href="201ExtTablas.html">
       
-      <link rel="icon" href="/tutorial_mkdocs/assets/images/favicon.png">
+      
+        <link rel="next" href="203ExtEmojis.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
     
     
       
-        <title>Crear documentación con MkDocs</title>
+        <title>📔 HTML en markdown - Crear documentación con MkDocs</title>
       
     
     
-      <link rel="stylesheet" href="/tutorial_mkdocs/assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="/tutorial_mkdocs/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="/tutorial_mkdocs/css/estilos.css">
+      <link rel="stylesheet" href="css/estilos.css">
     
-    <script>__md_scope=new URL("/tutorial_mkdocs/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#usando-html-y-markdown" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="/tutorial_mkdocs/." title="Crear documentación con MkDocs" class="md-header__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
+    <a href="." title="Crear documentación con MkDocs" class="md-header__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 0 1-.699.409l-5.523 1.68a.75.75 0 0 1-.747-.188.75.75 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 0 0 .1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              📔 HTML en markdown
             
           </span>
         </div>
@@ -174,11 +185,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/tutorial_mkdocs/index.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
           
   
     
@@ -255,7 +268,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/tutorial_mkdocs/." title="Crear documentación con MkDocs" class="md-nav__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
+    <a href="." title="Crear documentación con MkDocs" class="md-nav__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 0 1-.699.409l-5.523 1.68a.75.75 0 0 1-.747-.188.75.75 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 0 0 .1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg>
@@ -282,6 +295,8 @@
       
   
   
+    
+  
   
   
     
@@ -310,19 +325,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/tutorial_mkdocs/index.html" class="md-nav__link ">
+            <a href="index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -333,13 +351,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Indice
@@ -403,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/001Archivos.html" class="md-nav__link">
+      <a href="001Archivos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -424,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/002Estilos.html" class="md-nav__link">
+      <a href="002Estilos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -445,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/003Scripts.html" class="md-nav__link">
+      <a href="003Scripts.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -466,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/004Sitio.html" class="md-nav__link">
+      <a href="004Sitio.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/005Herramientas.html" class="md-nav__link">
+      <a href="005Herramientas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -516,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/006CrearProyecto.html" class="md-nav__link">
+      <a href="006CrearProyecto.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -591,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/100Markdown.html" class="md-nav__link">
+      <a href="100Markdown.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/101MkdParrafos.html" class="md-nav__link">
+      <a href="101MkdParrafos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -633,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/102MkdEnlaces.html" class="md-nav__link">
+      <a href="102MkdEnlaces.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -654,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/103MkdImagenes.html" class="md-nav__link">
+      <a href="103MkdImagenes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/104MkdListas.html" class="md-nav__link">
+      <a href="104MkdListas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -696,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/105MkdResalte.html" class="md-nav__link">
+      <a href="105MkdResalte.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/106MkdHTML.html" class="md-nav__link">
+      <a href="106MkdHTML.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -743,8 +761,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -778,11 +798,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" checked>
         
           
           <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
@@ -796,7 +816,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_6">
             <span class="md-nav__icon md-icon"></span>
             📚 Extensiones
@@ -810,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/200Extensiones.html" class="md-nav__link">
+      <a href="200Extensiones.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -831,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/201ExtTablas.html" class="md-nav__link">
+      <a href="201ExtTablas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -849,10 +869,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/202ExtHTML.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📔 HTML en markdown
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="202ExtHTML.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -861,6 +901,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-en-bloques-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown en bloques HTML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atributos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saltos-de-linea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saltos de línea
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -873,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/203ExtEmojis.html" class="md-nav__link">
+      <a href="203ExtEmojis.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -894,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/204ExtAuxiliar.html" class="md-nav__link">
+      <a href="204ExtAuxiliar.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -915,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/205ExtCodigo.html" class="md-nav__link">
+      <a href="205ExtCodigo.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -936,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/206ExtListas.html" class="md-nav__link">
+      <a href="206ExtListas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -957,7 +1044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/207ExtResaltado.html" class="md-nav__link">
+      <a href="207ExtResaltado.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -978,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/208ExtBloques.html" class="md-nav__link">
+      <a href="208ExtBloques.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -999,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/209ExtDiagramas.html" class="md-nav__link">
+      <a href="209ExtDiagramas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1020,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/210ExtEmergente.html" class="md-nav__link">
+      <a href="210ExtEmergente.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1041,7 +1128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/211ExtSnnipets.html" class="md-nav__link">
+      <a href="211ExtSnnipets.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1070,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/300Metadatos.html" class="md-nav__link">
+      <a href="300Metadatos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1151,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/401ConfAssets.html" class="md-nav__link">
+      <a href="401ConfAssets.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1172,7 +1259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/402ExtenderTema.html" class="md-nav__link">
+      <a href="402ExtenderTema.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1193,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/403ConfColores.html" class="md-nav__link">
+      <a href="403ConfColores.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1214,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/404ConfFuentes.html" class="md-nav__link">
+      <a href="404ConfFuentes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1235,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/405ConfIdioma.html" class="md-nav__link">
+      <a href="405ConfIdioma.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1256,7 +1343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/406ConfLogos.html" class="md-nav__link">
+      <a href="406ConfLogos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1277,7 +1364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/407ConfNavegacion.html" class="md-nav__link">
+      <a href="407ConfNavegacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1298,7 +1385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/408ConfBusquedas.html" class="md-nav__link">
+      <a href="408ConfBusquedas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1319,7 +1406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/409ConfCabeceraPie.html" class="md-nav__link">
+      <a href="409ConfCabeceraPie.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1340,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/410ConfRepositorio.html" class="md-nav__link">
+      <a href="410ConfRepositorio.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1369,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/901GitHub.html" class="md-nav__link">
+      <a href="901GitHub.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1442,10 +1529,122 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <p>vaya, algo ha fallado...</p> 
-  <h1>página no encontrada</h1>
+                  
+
+  
   
 
+
+<h1 id="usando-html-y-markdown">Usando HTML y markdown<a class="headerlink" href="#usando-html-y-markdown" title="Permanent link">&para;</a></h1>
+<p>Ya hemos visto que en bloques delimitado por etiquetas HTML no tiene efecto el formato <em>markdown</em>, y tenemos que usar otras etiquetas manualmente. También tenemos que usarlas para aplicar estilos a un elemento.</p>
+<p>La extensiones incorporadas permiten superar estos inconvenientes.</p>
+<h2 id="markdown-en-bloques-html">Markdown en bloques HTML<a class="headerlink" href="#markdown-en-bloques-html" title="Permanent link">&para;</a></h2>
+<p>Veamos lo que pasa cuando delimitamos bloques mediante etiquetas HTML:</p>
+<div class="highlight"><pre><span></span><code>Párrafo 1 con <span class="gs">**texto en negrita**</span>.
+
+&lt;div&gt;
+Párrafo 2 con <span class="gs">**texto en negrita**</span>.
+
+Párrafo 3.
+&lt;/div&gt;
+</code></pre></div>
+<p>Las etiquetas <code>&lt;div&gt;</code> permiten indicar bloques formados por uno o varios párrafos u otros elementos. Lo anterior muestra:</p>
+<div class="conmarco">
+<p>Párrafo 1 con <strong>texto en negrita</strong>.</p>
+
+<div>
+Párrafo 2 con **texto en negrita**.
+
+Párrafo 3.
+</div>
+
+</div>
+
+<p>Al delimitar parte del texto entre etiquetas <code>&lt;div&gt;</code> se desactiva el efecto de la sintaxis <em>markdown</em>. En el ejemplo, no se identifica el texto en negrita ni la separación de párrafos.</p>
+<p>Para lograr el efecto deseado, en este ejemplo tenemos que añadir manualmente etiquetas <code>&lt;b&gt;</code> y <code>&lt;p&gt;</code> en el interior del bloque:</p>
+<div class="highlight"><pre><span></span><code>Párrafo 1 con <span class="gs">**texto en negrita**</span>.
+
+&lt;div&gt;
+&lt;p&gt;Párrafo 2 con &lt;b&gt;texto en negrita.&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;Párrafo 3.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre></div>
+<p>La extensión <a href="https://python-markdown.github.io/extensions/md_in_html/">Markdown in HTML</a> permite que se tenga en cuenta la sintaxis markdown dentro de un bloque HTML. Tenemos que activarla en el archivo <code>mkdocs.yml</code>:</p>
+<div class="highlight"><pre><span></span><code>markdown_extensions:
+  - md_in_html
+</code></pre></div>
+<p>Con esta extensión activada, en la etiqueta de apertura del bloque HTML tenemos que añadir un atributo <em>markdown</em>:</p>
+<div class="highlight"><pre><span></span><code>Párrafo 1 con <span class="gs">**texto en negrita**</span>.
+
+&lt;div markdown=&quot;1&quot;&gt;
+Párrafo 2 con <span class="gs">**texto en negrita**</span>.
+
+Párrafo 3.
+&lt;/div&gt;
+</code></pre></div>
+<p>Los posibles valores de este atributo son "1", "block", o "span". Si el atributo toma el valor "1", el comportamiento dependerá de la etiqueta. Los otros dos valores se utilizan para forzar un comportamiento diferente del establecido por defecto.</p>
+<h2 id="atributos">Atributos<a class="headerlink" href="#atributos" title="Permanent link">&para;</a></h2>
+<p>Ya hemos visto que, en formato HTML, los atributos de un elemento se definen en la etiqueta de apertura del elemento:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;p</span><span class="w">  </span><span class="na">atributo1=</span><span class="s">&quot;valor1&quot;</span><span class="w">  </span><span class="na">atributo2=</span><span class="s">&quot;valor2&quot;</span><span class="w"> </span><span class="nt">&gt;</span><span class="w"> </span>
+Texto<span class="w"> </span>del<span class="w"> </span>párrafo<span class="w">  </span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
+
+<p>En formato <em>markdown</em>, en principio no tenemos la posibilidad de establecer los atributos de un elemento. Pero la extensión <a href="https://python-markdown.github.io/extensions/attr_list/">attr_list</a> nos la proporciona. Tenemos que activarla en el archivo <code>mdocs.yml</code></p>
+<div class="highlight"><pre><span></span><code>markdown_extensions:
+    - attr_list
+</code></pre></div>
+<p>Una vez hecho esto, para aplicar atributos a un párrafo, debemos añadir una línea delimitada entre <code>{:</code> y <code>}</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">Texto</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">párrafo</span>
+<span class="n">formado</span><span class="w"> </span><span class="n">por</span><span class="w"> </span><span class="n">varias</span><span class="w"> </span><span class="n">líneas</span>
+<span class="n">que</span><span class="w"> </span><span class="n">se</span><span class="w"> </span><span class="n">unen</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">una</span><span class="w"> </span><span class="n">sola</span>
+<span class="p">{:</span><span class="w"> </span><span class="n">atributo1</span><span class="o">=</span><span class="s2">&quot;valor1&quot;</span><span class="w">  </span><span class="n">atributo2</span><span class="o">=</span><span class="s2">&quot;valor2&quot;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+
+<p>Por ejemplo:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">Este</span><span class="w"> </span><span class="nt">es</span><span class="w"> </span><span class="nt">un</span><span class="w"> </span><span class="nt">párrafo</span><span class="w"> </span><span class="nt">en</span><span class="w"> </span><span class="nt">color</span><span class="w"> </span><span class="nt">rojo</span><span class="o">.</span>
+<span class="p">{</span><span class="err">:</span><span class="w"> </span><span class="err">style=&quot;</span><span class="k">color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span><span class="err">&quot;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+
+<p>Los atributos <code>id</code> y <code>class</code> tienen una sintaxis especial:</p>
+<ul>
+<li>el atributo ID se escribe en formato <code>#nombre</code></li>
+<li>el atributo de clase en formato <code>.nombre</code></li>
+<li>cualquier otro atributo en formato <code>clave="valor"</code></li>
+</ul>
+<p>Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>Texto del párrafo
+{:  #parraforojo  .rojo  style=&quot;color:red;&quot;  }
+</code></pre></div>
+<p>Los párrafos de cabecera tienen una consideración especial en <em>markdown</em>. No pueden ser multilínea. Por este motivo, la lista de atributos de una cabecera se coloca al final de la línea:</p>
+<div class="highlight"><pre><span></span><code>Cabecera estilo setext {: atributos }
+==================================
+
+### Cabecera estilo atx ### {: atributos }
+</code></pre></div>
+<p>También podemos definir atributos para un fragmento dentro del texto de un párrafo; por ejemplo, un enlace. Debemos colocar la lista inmediatamente a continuación del elemento, sin dejar espacios en blanco:</p>
+<div class="highlight"><pre><span></span><code>Véase [<span class="nt">enlace</span>](<span class="na">http://ejemplo.com</span>){: class=&quot;enlace&quot; title=&quot;Título del enlace&quot; } para más información.
+</code></pre></div>
+<h2 id="saltos-de-linea">Saltos de línea<a class="headerlink" href="#saltos-de-linea" title="Permanent link">&para;</a></h2>
+<p>La extensión <a href="https://python-markdown.github.io/extensions/nl2br/">nl2br</a> hará que los saltos de línea de un documento markdown sean respetados, insertando etiquetas <code>&lt;br&gt;</code> al final de cada línea del texto html generado.</p>
+<p>Se activa con:</p>
+<div class="highlight"><pre><span></span><code>markdown_extensions:
+    - nl2br
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1463,6 +1662,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="201ExtTablas.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 📔 Tablas">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                📔 Tablas
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="203ExtEmojis.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 📔 Iconos y emojis">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                📔 Iconos y emojis
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1492,14 +1729,14 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/tutorial_mkdocs/", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigation.top", "navigation.indexes", "content.code.copy", "content.tooltips", "search.highlight"], "search": "/tutorial_mkdocs/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigation.top", "navigation.indexes", "content.code.copy", "content.tooltips", "search.highlight"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="/tutorial_mkdocs/assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="/tutorial_mkdocs/javascripts/tables.js"></script>
+        <script src="javascripts/tables.js"></script>
       
-        <script src="/tutorial_mkdocs/javascripts/mathjax.js"></script>
+        <script src="javascripts/mathjax.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       

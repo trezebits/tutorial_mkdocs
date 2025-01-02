@@ -10,22 +10,28 @@
       
       
       
+        <link rel="canonical" href="https://trezebits.github.io/tutorial_mkdocs/105MkdResalte.html">
       
       
+        <link rel="prev" href="104MkdListas.html">
       
-      <link rel="icon" href="/tutorial_mkdocs/assets/images/favicon.png">
+      
+        <link rel="next" href="106MkdHTML.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
     
     
       
-        <title>Crear documentación con MkDocs</title>
+        <title>📔 Texto resaltado - Crear documentación con MkDocs</title>
       
     
     
-      <link rel="stylesheet" href="/tutorial_mkdocs/assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="/tutorial_mkdocs/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="/tutorial_mkdocs/css/estilos.css">
+      <link rel="stylesheet" href="css/estilos.css">
     
-    <script>__md_scope=new URL("/tutorial_mkdocs/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#resaltar-texto" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="/tutorial_mkdocs/." title="Crear documentación con MkDocs" class="md-header__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
+    <a href="." title="Crear documentación con MkDocs" class="md-header__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 0 1-.699.409l-5.523 1.68a.75.75 0 0 1-.747-.188.75.75 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 0 0 .1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              📔 Texto resaltado
             
           </span>
         </div>
@@ -174,11 +185,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/tutorial_mkdocs/index.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
           
   
     
@@ -255,7 +268,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/tutorial_mkdocs/." title="Crear documentación con MkDocs" class="md-nav__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
+    <a href="." title="Crear documentación con MkDocs" class="md-nav__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 0 1-.699.409l-5.523 1.68a.75.75 0 0 1-.747-.188.75.75 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 0 0 .1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg>
@@ -282,6 +295,8 @@
       
   
   
+    
+  
   
   
     
@@ -310,19 +325,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/tutorial_mkdocs/index.html" class="md-nav__link ">
+            <a href="index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -333,13 +351,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Indice
@@ -403,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/001Archivos.html" class="md-nav__link">
+      <a href="001Archivos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -424,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/002Estilos.html" class="md-nav__link">
+      <a href="002Estilos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -445,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/003Scripts.html" class="md-nav__link">
+      <a href="003Scripts.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -466,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/004Sitio.html" class="md-nav__link">
+      <a href="004Sitio.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/005Herramientas.html" class="md-nav__link">
+      <a href="005Herramientas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -516,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/006CrearProyecto.html" class="md-nav__link">
+      <a href="006CrearProyecto.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -534,8 +552,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -559,11 +579,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" checked>
         
           
           <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
@@ -577,7 +597,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_5">
             <span class="md-nav__icon md-icon"></span>
             📚 Markdown
@@ -591,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/100Markdown.html" class="md-nav__link">
+      <a href="100Markdown.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/101MkdParrafos.html" class="md-nav__link">
+      <a href="101MkdParrafos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -633,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/102MkdEnlaces.html" class="md-nav__link">
+      <a href="102MkdEnlaces.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -654,7 +674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/103MkdImagenes.html" class="md-nav__link">
+      <a href="103MkdImagenes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/104MkdListas.html" class="md-nav__link">
+      <a href="104MkdListas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -693,10 +713,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/105MkdResalte.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📔 Texto resaltado
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="105MkdResalte.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -705,6 +745,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#texto-en-cursiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texto en cursiva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texto-en-negrita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texto en negrita
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codigo-fuente-inline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código fuente inline
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -717,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/106MkdHTML.html" class="md-nav__link">
+      <a href="106MkdHTML.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -810,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/200Extensiones.html" class="md-nav__link">
+      <a href="200Extensiones.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -831,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/201ExtTablas.html" class="md-nav__link">
+      <a href="201ExtTablas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -852,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/202ExtHTML.html" class="md-nav__link">
+      <a href="202ExtHTML.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -873,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/203ExtEmojis.html" class="md-nav__link">
+      <a href="203ExtEmojis.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -894,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/204ExtAuxiliar.html" class="md-nav__link">
+      <a href="204ExtAuxiliar.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -915,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/205ExtCodigo.html" class="md-nav__link">
+      <a href="205ExtCodigo.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -936,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/206ExtListas.html" class="md-nav__link">
+      <a href="206ExtListas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -957,7 +1044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/207ExtResaltado.html" class="md-nav__link">
+      <a href="207ExtResaltado.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -978,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/208ExtBloques.html" class="md-nav__link">
+      <a href="208ExtBloques.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -999,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/209ExtDiagramas.html" class="md-nav__link">
+      <a href="209ExtDiagramas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1020,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/210ExtEmergente.html" class="md-nav__link">
+      <a href="210ExtEmergente.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1041,7 +1128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/211ExtSnnipets.html" class="md-nav__link">
+      <a href="211ExtSnnipets.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1070,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/300Metadatos.html" class="md-nav__link">
+      <a href="300Metadatos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1151,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/401ConfAssets.html" class="md-nav__link">
+      <a href="401ConfAssets.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1172,7 +1259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/402ExtenderTema.html" class="md-nav__link">
+      <a href="402ExtenderTema.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1193,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/403ConfColores.html" class="md-nav__link">
+      <a href="403ConfColores.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1214,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/404ConfFuentes.html" class="md-nav__link">
+      <a href="404ConfFuentes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1235,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/405ConfIdioma.html" class="md-nav__link">
+      <a href="405ConfIdioma.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1256,7 +1343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/406ConfLogos.html" class="md-nav__link">
+      <a href="406ConfLogos.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1277,7 +1364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/407ConfNavegacion.html" class="md-nav__link">
+      <a href="407ConfNavegacion.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1298,7 +1385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/408ConfBusquedas.html" class="md-nav__link">
+      <a href="408ConfBusquedas.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1319,7 +1406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/409ConfCabeceraPie.html" class="md-nav__link">
+      <a href="409ConfCabeceraPie.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1340,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/410ConfRepositorio.html" class="md-nav__link">
+      <a href="410ConfRepositorio.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1369,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tutorial_mkdocs/901GitHub.html" class="md-nav__link">
+      <a href="901GitHub.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1442,10 +1529,136 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <p>vaya, algo ha fallado...</p> 
-  <h1>página no encontrada</h1>
+                  
+
+  
   
 
+
+<h1 id="resaltar-texto">Resaltar texto<a class="headerlink" href="#resaltar-texto" title="Permanent link">&para;</a></h1>
+<p>¿Que pasa si queremos que un fragmento de texto se muestre en otro color o con un efecto especial? En líneas generales, se usan hojas de estilo CSS para definir reglas de presentación,  pero tanto <em>markdown</em> como <em>HTML</em> tienen algunos recursos básicos de resaltado.</p>
+<h2 id="texto-en-cursiva">Texto en cursiva<a class="headerlink" href="#texto-en-cursiva" title="Permanent link">&para;</a></h2>
+<p>En formato <em>markdown</em>, todo texto entre asteriscos o caracteres de subrayado(<code>_</code>) será mostrado con un tipo de letra enfatizado, generalmente cursiva. Lo siguiente:</p>
+<div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>  <span class="ge">*texto entre asteriscos*</span>
+<span class="k">-</span><span class="w"> </span>  <span class="ge">_texto entre subrayados_</span>
+</code></pre></div>
+<p>Se mostrará en cursiva:</p>
+<div class="conmarco">
+<ul>
+<li><em>texto entre asteriscos</em></li>
+<li><em>texto entre subrayados</em></li>
+</ul>
+</div>
+<p>Podemos poner énfasis en mitad de una palabra:</p>
+<div class="highlight"><pre><span></span><code>Don*super*increíble
+</code></pre></div>
+<p>Muestra:</p>
+<div class="conmarco">
+<p>Don<em>super</em>increíble</p>
+</div>
+<p>pero todo marcador rodeado de espacios será tratado como texto regular:</p>
+<div class="highlight"><pre><span></span><code>Don * super * increíble
+</code></pre></div>
+<p>Muestra:</p>
+<div class="conmarco">
+<p>Don * super * increíble</p>
+</div>
+<p>En este caso, para que los asteriscos actúen como marcador, deben ir "pegados" a una palabra:</p>
+<div class="highlight"><pre><span></span><code>Don <span class="ge">*super*</span> increíble
+</code></pre></div>
+<p>Si queremos forzar que los asteriscos se muestren como tales, podemos "<em>escaparlos</em>" precediéndolos con una barra invertida:</p>
+<div class="highlight"><pre><span></span><code>\*texto que se mostrará entre asteriscos\*
+</code></pre></div>
+<p>Muestra:</p>
+<div class="conmarco">
+<p>*texto que se mostrará entre asteriscos*</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">¡Cuidado!</p>
+<p>En realidad, lo que se muestra es texto "enfatizado". Típicamente se resuelve visualizándolo en cursiva, pero esto depende del navegador.</p>
+<p>El texto enfatizado se transforma a HTML delimitándolo entre etiquetas <code>&lt;em&gt; ... &lt;/em&gt;</code>. Si lo que realmente queremos es texto en cursiva, podríamos asegurarnos de ello utilizando las etiquetas <code>&lt;i&gt; ... &lt;/i&gt;</code> directamente.</p>
+</div>
+<h2 id="texto-en-negrita">Texto en negrita<a class="headerlink" href="#texto-en-negrita" title="Permanent link">&para;</a></h2>
+<p>Si usamos doble asterisco o subrayado como marcadores, el fragmento de texto delimitado se mostrará en negrita.</p>
+<p>Lo siguiente</p>
+<div class="highlight"><pre><span></span><code><span class="gs">**doble asterisco**</span>
+<span class="gs">__doble subrayado__</span>
+</code></pre></div>
+<p>Se mostrará como:</p>
+<div class="conmarco">
+<strong>doble asterisco</strong><br>
+<strong>doble subrayado</strong><br>
+</div>
+
+<p>Podemos combinar dos estilos diferentes de enfatizado:</p>
+<p><div class="highlight"><pre><span></span><code><span class="ge">*Esto es __super__ importante*</span>
+</code></pre></div>
+lo que muestra:</p>
+<div class="conmarco">
+<em>Esto es <strong>super</strong> importante</em>
+</div>
+
+<p>El texto enfatizado se transforma a HTML delimitándolo entre etiquetas <code>&lt;strong&gt; ... &lt;/strong&gt;</code>. La forma de presentación suele ser negrita, aunque depende del navegador. Una vez más, si lo que queremos realmente es negrita (bold), podríamos usar manualmente las etiquetas <code>&lt;b&gt; ... &lt;/b&gt;</code>.</p>
+<h2 id="codigo-fuente-inline">Código fuente inline<a class="headerlink" href="#codigo-fuente-inline" title="Permanent link">&para;</a></h2>
+<p>Al examinar los párrafos vimos la posibilidad de crear párrafos preformateados:</p>
+<div class="highlight"><pre><span></span><code>Texto en formato HTML:
+
+    &lt;html&gt;
+        &lt;body&gt;
+            &lt;p&gt;Textpo de párrafo&lt;/p&gt;.
+        &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre></div>
+<p>Este ejemplo muestra:</p>
+<div class="conmarco">
+<p>Texto en formato HTML:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;html&gt;</span>
+<span class="w">    </span><span class="nt">&lt;body&gt;</span>
+<span class="w">        </span><span class="nt">&lt;p&gt;</span>Textpo<span class="w"> </span>de<span class="w"> </span>párrafo<span class="nt">&lt;/p&gt;</span>.
+<span class="w">    </span><span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+</div>
+<p>Véase que no solo se respetan las líneas y espaciado. También se utiliza un tipo de letra especial y se respetan los caracteres como <code>&lt;&gt;</code>, que en formato HTML sirven para indicar una etiqueta.</p>
+<p>Pero ¿que pasa si queremos respetar solo un fragmento de texto dentro de un párrafo? Por ejemplo, imaginemos que queremos mostrar:</p>
+<div class="conmarco">
+<p>En formato HTML, los párrafos de texto se delimitan entre etiquetas <code>&lt;p&gt;</code>.</p>
+</div>
+<p>Estamos forzando que, en la conversión, la etiqueta <code>&lt;p&gt;</code> se muestra como parte del texto, con un formato de letra de código fuente. En <em>markdown</em> esto se consigue delimitándo ese fragmento entre acentos invertidos (backticks):</p>
+<div class="highlight"><pre><span></span><code>En formato HTML, los párrafos de texto se delimitan entre etiquetas <span class="sb">`&lt;p&gt;`</span>.
+</code></pre></div>
+<p>En líneas generales, todo texto entre acentos invertidos se respetará y mostrará con ese tipo de letra especial. Pero... ¿como incluir un acento invertido como parte del texto protegido?  Usar como delimitadores dos acentos:</p>
+<div class="highlight"><pre><span></span><code>``Usar un carácter (`) delimitador.``
+</code></pre></div>
+<p>Muestra:</p>
+<div class="conmarco">
+<p><code>Usar un carácter (`) delimitador.</code></p>
+</div>
+<p>¿Que pasa si el backtick protegido va inmediatamente tras los dos acentos de apertura o antes de los de cierre? Por ejemplo:</p>
+<div class="conmarco">
+<p>Usar un carácter delimitador <code>`</code> </p>
+</div>
+<p>No podemos escribir:</p>
+<div class="codehilite"><pre><span></span><code>Usar un carácter delimitador `````
+</code></pre></div>
+
+<p>En este caso, podemos añadir espacios, uno tras la apertura y otro antes del cierre, que serán eliminados del resultado final.</p>
+<div class="codehilite"><pre><span></span><code>Usar un carácter delimitador `` ` ``
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1463,6 +1676,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="104MkdListas.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 📔 Listas">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                📔 Listas
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="106MkdHTML.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 📔 HTML y Markdown">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                📔 HTML y Markdown
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1492,14 +1743,14 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/tutorial_mkdocs/", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigation.top", "navigation.indexes", "content.code.copy", "content.tooltips", "search.highlight"], "search": "/tutorial_mkdocs/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigation.top", "navigation.indexes", "content.code.copy", "content.tooltips", "search.highlight"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="/tutorial_mkdocs/assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="/tutorial_mkdocs/javascripts/tables.js"></script>
+        <script src="javascripts/tables.js"></script>
       
-        <script src="/tutorial_mkdocs/javascripts/mathjax.js"></script>
+        <script src="javascripts/mathjax.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       

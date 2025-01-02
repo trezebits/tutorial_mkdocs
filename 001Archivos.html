@@ -10,11 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://trezebits.github.io/tutorial_mkdocs/index.html">
+        <link rel="canonical" href="https://trezebits.github.io/tutorial_mkdocs/001Archivos.html">
       
       
+        <link rel="prev" href="index.html">
       
-        <link rel="next" href="001Archivos.html">
+      
+        <link rel="next" href="002Estilos.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -22,7 +24,7 @@
     
     
       
-        <title>📚 Introducción - Crear documentación con MkDocs</title>
+        <title>📔 Archivos web - Crear documentación con MkDocs</title>
       
     
     
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mi-guia-personalpara-crear-documentacion" class="md-skip">
+        <a href="#anatomia-de-una-pagina-web" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📚 Introducción
+              📔 Archivos web
             
           </span>
         </div>
@@ -338,7 +340,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link md-nav__link--active">
+            <a href="index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -349,7 +351,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_1" id="__nav_1_label" tabindex="">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -368,8 +370,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -387,11 +391,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
         
           
           <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
@@ -405,7 +409,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             📚 Páginas web
@@ -416,10 +420,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="001Archivos.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📔 Archivos web
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="001Archivos.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -428,6 +452,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archivos-de-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivos de texto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marcas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marcas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anatomia-de-un-archivo-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anatomía de un archivo HTML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estandares-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estándares web
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-formato-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      El formato markdown
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etiquetas-html-en-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etiquetas HTML en markdown
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1464,12 +1571,238 @@
   
 
 
-<p><img src="img/logo.png" style="float:left; padding-right:30px"></p>
-<h1 id="mi-guia-personalpara-crear-documentacion" style="text-shadow: 2px 2px #000000; text-align:left;">Mi guía personal<br>para crear documentación<a class="headerlink" href="#mi-guia-personalpara-crear-documentacion" title="Permanent link">&para;</a></h1>
-<p>En este cuaderno voy a hacer un recorrido por las herramientas que utilizo para reunir y publicar mis notas.</p>
-<p>Aunque no soy un profesional de la informática, me gusta explorar todo lo relacionado con el mundo de los ordenadores y crear mi colección de apuntes. Organizo la documentación en forma de <em>cuadernos</em>, siendo cada uno de ellos un proyecto aparte. Suelo compartir esas notas en el caso de aquellos cuadernos que llegan a materializarse para lograr algo publicable.</p>
-<p>Mis fuentes son muy variadas. En el caso de este cuaderno en particular, el principal elemento de consulta es la documentación de <a href="https://squidfunk.github.io/mkdocs-material">Material for MkDocs</a>, el software que utilizo para convertir mis archivos de texto en páginas web.</p>
-<p>Veremos todo el proceso en detalle.</p>
+<h1 id="anatomia-de-una-pagina-web">Anatomía de una página web<a class="headerlink" href="#anatomia-de-una-pagina-web" title="Permanent link">&para;</a></h1>
+<p>Dado que vamos a mostrar nuestra documentación en forma de páginas web, comencemos por "destripar" lo que obtenemos cuando navegamos por la red. </p>
+<h2 id="archivos">Archivos<a class="headerlink" href="#archivos" title="Permanent link">&para;</a></h2>
+<p>Típicamente, toda sesión comienza introduciendo una URL en nuestro navegador. Por ejemplo:</p>
+<div class="codehilite"><pre><span></span><code>https://www.google.com/
+</code></pre></div>
+
+<p>Lo que sucede en ese momento es que nuestra compañía de comunicaciones (la empresa de telefonía, u otra) actúa como Proveedor de Servicios de Internet (<a href="https://es.wikipedia.org/wiki/Proveedor_de_servicios_de_internet">ISP</a>) y desencadena todo el proceso para traducir la URL, localizar el servidor web donde se aloja la página (en este ejemplo, Google) y descargar los contenidos, que se visualizarán en la ventana del navegador.</p>
+<p>Inicialmente se descarga la página principal, o la solicitada, si la URL lo especifica. A medida que vayamos pulsando en los enlaces que hay en el texto, se irán descargando y mostrando otras páginas.</p>
+<p>Cada página web es, en esencia, un archivo de texto. Si incluye imágenes u otros elementos gráficos o audiovisuales, estos se descargan en paralelo, como archivos independientes. El navegador tomará los ficheros y hará una composición "al vuelo" para obtener la presentación a visualizar.</p>
+<p>Veámoslo con un ejemplo. Supongamos, como ejemplo, un sitio web que tiene:</p>
+<ul>
+<li>una página principal, con enlaces al resto de páginas</li>
+<li>dos adicionales, la página 2 y la 3, a las que se accede desde la principal, y que tienen enlaces de vuelta a esta</li>
+<li>la página 3 muestra unas imágenes, que se descargan al mismo tiempo.</li>
+</ul>
+<p>Esquemáticamente sería:</p>
+<pre class="mermaid"><code>flowchart TD
+  A[Página 1 principal&lt;br&gt;que contiene un texto&lt;br&gt;con enlaces a otras páginas];
+  A --&gt; |descarga de página 2| B[Página 2];
+  A --&gt; |descarga de página 3| C[Página 3 con imágenes&lt;br&gt;que se descargan en paralelo] 
+  A --&gt; |descarga junto a página 3| D[imagen1.jpg&lt;br&gt;imagen2.jpg];
+  B --&gt; |enlace de vuelta| A;
+  C --&gt; E[Página 3 resultante];
+  D --&gt; E
+  E --&gt; |enlace de vuelta| A;
+</code></pre>
+<p>En el servidor web tendremos, básicamente, cinco ficheros:</p>
+<ul>
+<li>tres archivos con texto</li>
+<li>dos archivos de imágenes</li>
+</ul>
+<h2 id="archivos-de-texto">Archivos de texto<a class="headerlink" href="#archivos-de-texto" title="Permanent link">&para;</a></h2>
+<p>En líneas generales, en el mundo de los ordenadores existen dos tipos de ficheros:</p>
+<ul>
+<li>
+<p>los "binarios", formados por ceros y unos que representan imágenes, sonido, etc.</p>
+</li>
+<li>
+<p>los de texto, que consisten exclusivamente en una secuencia de caracteres.</p>
+</li>
+</ul>
+<p>Para crear documentos de texto podemos utilizar dos tipos de programa:</p>
+<ul>
+<li>
+<p>Editores <em>Rich text format</em>, donde los documentos incluyen texto, imágenes, tipografía, y toda clase de elementos gráficos. Típicamente, estos ficheros se suelen guardar en formato binario.</p>
+<p><img src="img/001RTF.png" class="sombra" style= width:500px;"></p>
+</li>
+<li>
+<p>Editores <em>Plain text</em>, que no admiten elementos gráficos ni información añadida sobre estilos de letra:</p>
+<p><img src="img/001PlainText.png" class="sombra" style= width:500px;"></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Acerca del término '<em>plain text</em>'</p>
+<p>En algunos manuales técnicos, a los archivos <em>plain text</em> se les llama <em>ficheros de "texto plano"</em>. Realmente no tiene nada que ver con que sea plano o redondo. La traducción correcta sería "<em>texto sin más</em>".</p>
+</div>
+<p>Existe un caso especial de archivos "<em>plain text</em>". Son aquellos que contienen anotaciones que acompañan al texto, con información sobre formato de presentación. A estas anotaciones se les llama "<em>marcas</em>".</p>
+<p>Las páginas web son archivos <em>plain text</em> con unas marcas que proporcionan al navegador todo lo que necesita saber para establecer el aspecto final de la visualización y la forma de insertar en el documento el resto de archivos (imágenes, etc) descargados en paralelo.</p>
+<h2 id="marcas">Marcas<a class="headerlink" href="#marcas" title="Permanent link">&para;</a></h2>
+<p>Supongamos, por ejemplo, que una página web muestra el siguiente contenido:</p>
+<div class="conmarco">
+Un texto <b>en negrita</b> y este otro <i>en cursiva</i>.
+</div>
+
+<p>El archivo que se descarga es un <em>plain text</em> que contiene lo siguiente:</p>
+<div class="highlight"><pre><span></span><code>Un texto <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>en negrita<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span> y este otro <span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>en cursiva<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>.
+</code></pre></div>
+<p>Las marcas de las páginas web se denominan <em>etiquetas</em>, y se delimitan entre dos ángulos <code>&lt; &gt;</code>. El navegador no las muestra en la pantalla, pero las utilizará para determinar el formato de presentación de la página. En nuestro ejemplo:</p>
+<ul>
+<li>La etiqueta <code>&lt;b&gt;</code> indica el comienzo del texto en negrita (bold).</li>
+<li>La etiqueta <code>&lt;/b&gt;</code> indica el fin del texto en negrita.</li>
+<li>La etiqueta <code>&lt;i&gt;</code> indica el comienzo del texto en cursiva (itálica).</li>
+<li>La etiqueta <code>&lt;/i&gt;</code> indica el fin del texto en cursiva.</li>
+</ul>
+<p>Estas etiquetas han de respetar unas reglas de sintaxis que se denominan <em>lenguaje de marcas</em>. Existen numerosos lenguajes de marcado. Véase <a href="https://es.wikipedia.org/wiki/Lenguaje_de_marcado">Wikipedia</a>. Las páginas web utilizan una sintaxis denominada <a href="https://es.wikipedia.org/wiki/HTML">HTML</a>, abreviatura de <em>HyperText Markup Language</em>.</p>
+<p>En una primera aproximación, se podría decir que, para crear una página web, todo lo que necesitamos es un editor de <em>plain text</em> para escribir texto que lleve etiquetas HTML. Veamos esto con más detalle.</p>
+<h2 id="anatomia-de-un-archivo-html">Anatomía de un archivo HTML<a class="headerlink" href="#anatomia-de-un-archivo-html" title="Permanent link">&para;</a></h2>
+<p>Volvamos a nuestro ejemplo. Supongamos que queremos mostrar lo siguiente en la ventana del navegador:</p>
+<p><img alt="" src="img/001HTML.png" /></p>
+<p>El contenido del archivo de texto descargado sería algo así como:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+    <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mi primer documento<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Un texto <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>en negrita<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span> 
+            y este otro <span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>en cursiva<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>.
+            <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Para ensayar con el formato HTML, probemos a copiar este texto a nuestro editor <em>plain text</em>. Lo guardamos asignándole un nombre con sufijo <code>.html</code>, por ejemplo, <code>prueba.hmtl</code>. </p>
+<p>No es necesario que lo copiemos a un servidor web. Con tenerlo en nuestro disco duro, basta. Al hacer doble clic sobre el fichero, el sistema lo identificará como página web, y lo visualizará en la ventana del navegador.</p>
+<div class="admonition info">
+<p class="admonition-title">Editores de <em>plain text</em></p>
+<p>Para editar archivos <em>plain text</em>, Windows proporciona, desde sus origenes, un pequeño editor llamado "Bloc de notas". ¡Cuidado al guardar el archivo!. El editor suele añadir automáticamente la extensión <code>.txt</code> al nombre, por lo que es una característica que debemos desactivar. Las páginas web llevan el sufijo <code>.html</code></p>
+<p>Los ordenadores Mac vienen con un sencillo editor llamado <em>TextEdit</em>, que admite archivos en formato RTF (por defecto) o de texto simple. Debemos cambiar la configuración del editor para que se guarden como <em>texto sin formato</em>.</p>
+<p>Los sistemas Linux suelen proporcionar de serie uno o varios editores, pero eso depende de la distribución instalada, Ubuntu, Fedora, etc.</p>
+<p>Si no nos convence el editor que se suministra por defecto con nuestro sistema, tenemos cientos de editores a nuestra disposición en la red. Véase <a href="https://en.wikipedia.org/wiki/List_of_text_editors">Wikipedia</a></p>
+</div>
+<p>Analicemos el contenido de este primer ejemplo. Algunas líneas están sangradas (espaciado a la izquierda) y otras están en blanco. Todo eso es puramente decorativo, y será ignorado por el navegador. El resultado final sería el mismo si el contenido del archivo fuera:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;&lt;</span><span class="nt">body</span><span class="p">&gt;&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mi primer documento<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Un texto <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>en negrita<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>y este otro <span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>en cursiva<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>.
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>...pero al usar el editor de textos, resulta más cómodo utilizar
+un formato que sea amigable.</p>
+<p>Veamos ahora el significado de las etiquetas. Todo documento web suele empezar con <code>&lt;!DOCTYPE html&gt;</code>, lo que indica que se trata de un archivo en formato HTML. Las etiquetas <code>&lt;html&gt;</code> y <code>&lt;/html&gt;</code> delimitan el contenido del archivo:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+    <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+        contenido del archivo
+    <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Los diferentes bloques de texto se suelen delimitar con una <em>etiqueta de apertura</em> y una <em>de cierre</em>, que es la misma, pero añadiendo una barra <code>/</code>.</p>
+<p>El contenido de una página web puede estar formado por dos secciones:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    Cabecera del documento con información sobre el mismo (opcional)
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    Cuerpo del documento con el texto a mostrar
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Los párrafos del documento se colocan en la sección <code>&lt;body&gt;</code>, y cada uno de ellos se delimita entre etiquetas <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code>. El navegador unirá todas las líneas de un párrafo en una sola, e insertará un espaciado entre párrafos. Es decir, es lo mismo escribir:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;p&gt;</span>Texto<span class="w"> </span>del<span class="w"> </span>párrafo<span class="w"> </span>1<span class="nt">&lt;/p&gt;&lt;p&gt;</span>Texto<span class="w"> </span>del<span class="w"> </span>párrafo<span class="w"> </span>2<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
+
+<p>que</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;p&gt;</span>Texto<span class="w"> </span>del<span class="w"> </span>
+párrafo<span class="w"> </span>1<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Texto<span class="w"> </span>del<span class="w"> </span>párrafo<span class="w"> </span>2<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
+
+<p>ya que el navegador ignora todo espaciado extra y concatena las líneas de texto, pero separa visualmente los párrafos:</p>
+<div class="conmarco">
+<p>Texto del 
+párrafo 1</p>
+<p>Texto del párrafo 2</p>
+</div>
+
+<p>Si sustituimos las etiquetas <code>&lt;p&gt;</code> por <code>&lt;h1&gt;</code>, obtendremos un párrafo de título del documento, mostrado con un tipo de letra especial:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mi primer documento<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Los párrafos de título pueden añadirse con varios niveles de importancia:</p>
+<ul>
+<li><code>&lt;h1&gt;</code> para el título principal del documento</li>
+<li><code>&lt;h2&gt;</code> para títulos de secciones</li>
+<li><code>&lt;h3&gt;</code> para títulos de subsecciones</li>
+</ul>
+<p>... y así sucesivamente, hasta llegar a <code>&lt;h6&gt;</code>. El resaltado va de mayor a menor, en función de la importancia del título.</p>
+<h2 id="estandares-web">Estándares web<a class="headerlink" href="#estandares-web" title="Permanent link">&para;</a></h2>
+<p>El formato HTML establece unas reglas de escritura que pueden parecer bastante rigurosas. En realidad han sido concebidas para describir con total exactitud el contenido de una página. En algunas situaciones los navegadores suelen ser bastante permisivos, asumiendo algunos valores por defecto, si falta alguna etiqueta, o ignorando las etiquetas mal escritas, sin mostrar ningún mensaje de error.</p>
+<p>Tanto el formato HTML como otros estándares de Internet están regulados por el <a href="https://es.wikipedia.org/wiki/World_Wide_Web_Consortium">World Wide Web Consortium</a>, autoridad mundial que publica recomendaciones y estándares para asegurar el buen funcionamiento de la web. Este consorcio fue creado en octubre de 1994.</p>
+<h2 id="el-formato-markdown">El formato markdown<a class="headerlink" href="#el-formato-markdown" title="Permanent link">&para;</a></h2>
+<p>Redactar un documento en formato HTML puede llegar a ser bastante farragoso, con tanta etiqueta. En su lugar, es costumbre utilizar otros lenguajes de marcas más sencillos. Uno de los más populares es el formato <a href="https://es.wikipedia.org/wiki/Markdown">Markdown</a>. Nuestro archivo quedaría así:</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># Mi primer documento</span>
+
+Un texto <span class="gs">**en negrita**</span> 
+y este otro <span class="ge">*en cursiva*</span>.
+</code></pre></div>
+<p>En formato <em>markdown</em> tenemos lo siguiente:</p>
+<ul>
+<li>Los párrafos se separan con una línea en blanco. No necesitamos etiquetas <code>&lt;p&gt;</code> para delimitarlos.</li>
+<li>Las líneas que forman un párrafo se unen en una sola, como sucede en HTML.</li>
+<li>Los párrafos de título (cabeceras) se marcan anteponiendo un símbolo <code>#</code>.</li>
+<li>El texto se resalta delimitándolo entre asteriscos (cursiva) o doble asterisco (negrita).</li>
+</ul>
+<p>De esta forma, se suele decir que el formato HTML sirve para representar contenidos, y el formato <em>markdown</em> para redactarlos. Tendremos dos archivos:</p>
+<ul>
+<li><code>mipaginaweb.md</code>, creado con un editor de <em>plain text</em></li>
+<li><code>mipaginaweb.html</code>, creado con un programa conversor. Yo utilizo uno llamado <a href="https://www.mkdocs.org">MkDocs</a>, que toma los archivos <em>markdown</em> y genera los HTML para subirlos posteriormente al servidor web.</li>
+</ul>
+<h2 id="etiquetas-html-en-markdown">Etiquetas HTML en <em>markdown</em><a class="headerlink" href="#etiquetas-html-en-markdown" title="Permanent link">&para;</a></h2>
+<p>El uso del formato <em>markdown</em> hace que la tarea de edición del contenido de una página web resulte más simple. Pero tiene sus limitaciones. La sintaxis de <em>markdown</em> no cubre todas las posibilidades que ofrece HTML.</p>
+<p>Por ejemplo, supongamos que queremos introducir saltos de línea en mitad de un párrafo:</p>
+<div class="conmarco">
+<p>La canción de San Fermín:</p>
+
+<p>
+Uno de enero<br>
+dos de febrero<br>
+tres de marzo<br>
+... 
+</p>
+</div>
+
+<p>Nótese que entre líneas no queremos espaciado extra, como sucede entre párrafos. Pero si escribimos en formato <em>markdown</em>:</p>
+<div class="highlight"><pre><span></span><code>La canción de San Fermín:
+
+Uno de enero
+dos de febrero
+tres de marzo
+... 
+</code></pre></div>
+<p>Las líneas que forman el párrafo se unirán en una sola:</p>
+<div class="conmarco">
+<p>La canción de San Fermín:</p>
+
+<p>
+Uno de enero
+dos de febrero
+tres de marzo
+... 
+</p>
+</div>
+
+<p>En los archivos HTML podemos forzar un salto de línea mediante la etiqueta <code>&lt;br&gt;</code>, abreviatura de <em>break</em>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>La canción de San Fermín:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+Uno de enero<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+dos de febrero<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+tres de marzo<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+... 
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>En un texto <em>markdown</em>, podemos insertar manualmente etiquetas HTML que, con algunas excepciones, serán respetadas, salvo que entren en contradicción con lo generado durante el proceso de conversión:</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># La canción de San Fermín:</span>
+
+Uno de enero&lt;br&gt;
+dos de febrero&lt;br&gt;
+tres de marzo&lt;br&gt;
+... 
+</code></pre></div>
 
 
 
@@ -1504,15 +1837,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
+          
+          <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 📚 Introducción">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                📚 Introducción
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="001Archivos.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 📔 Archivos web">
+          <a href="002Estilos.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 📔 Atributos y estilos">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                📔 Archivos web
+                📔 Atributos y estilos
               </div>
             </div>
             <div class="md-footer__button md-icon">

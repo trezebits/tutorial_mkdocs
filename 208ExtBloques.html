@@ -10,11 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://trezebits.github.io/tutorial_mkdocs/index.html">
+        <link rel="canonical" href="https://trezebits.github.io/tutorial_mkdocs/208ExtBloques.html">
       
       
+        <link rel="prev" href="207ExtResaltado.html">
       
-        <link rel="next" href="001Archivos.html">
+      
+        <link rel="next" href="209ExtDiagramas.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -22,7 +24,7 @@
     
     
       
-        <title>📚 Introducción - Crear documentación con MkDocs</title>
+        <title>📔 Bloques - Crear documentación con MkDocs</title>
       
     
     
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mi-guia-personalpara-crear-documentacion" class="md-skip">
+        <a href="#bloques" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📚 Introducción
+              📔 Bloques
             
           </span>
         </div>
@@ -338,7 +340,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link md-nav__link--active">
+            <a href="index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -349,7 +351,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_1" id="__nav_1_label" tabindex="">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -759,8 +761,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -794,11 +798,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" checked>
         
           
           <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
@@ -812,7 +816,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_6">
             <span class="md-nav__icon md-icon"></span>
             📚 Extensiones
@@ -991,10 +995,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="208ExtBloques.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    📔 Bloques
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="208ExtBloques.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1003,6 +1027,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pestanas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pestañas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cards
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1464,12 +1526,274 @@
   
 
 
-<p><img src="img/logo.png" style="float:left; padding-right:30px"></p>
-<h1 id="mi-guia-personalpara-crear-documentacion" style="text-shadow: 2px 2px #000000; text-align:left;">Mi guía personal<br>para crear documentación<a class="headerlink" href="#mi-guia-personalpara-crear-documentacion" title="Permanent link">&para;</a></h1>
-<p>En este cuaderno voy a hacer un recorrido por las herramientas que utilizo para reunir y publicar mis notas.</p>
-<p>Aunque no soy un profesional de la informática, me gusta explorar todo lo relacionado con el mundo de los ordenadores y crear mi colección de apuntes. Organizo la documentación en forma de <em>cuadernos</em>, siendo cada uno de ellos un proyecto aparte. Suelo compartir esas notas en el caso de aquellos cuadernos que llegan a materializarse para lograr algo publicable.</p>
-<p>Mis fuentes son muy variadas. En el caso de este cuaderno en particular, el principal elemento de consulta es la documentación de <a href="https://squidfunk.github.io/mkdocs-material">Material for MkDocs</a>, el software que utilizo para convertir mis archivos de texto en páginas web.</p>
-<p>Veremos todo el proceso en detalle.</p>
+<h1 id="bloques">Bloques<a class="headerlink" href="#bloques" title="Permanent link">&para;</a></h1>
+<p>Dividir un documento en apartados, cada uno con su título, y a su vez en párrafos, nos permite organizar los contenidos. Pero hay situaciones en las que necesitamos organizar la información de forma más gráfica.</p>
+<h2 id="pestanas">Pestañas<a class="headerlink" href="#pestanas" title="Permanent link">&para;</a></h2>
+<p>Supongamos que tenemos varios textos que queremos visualizar alternativamente. Por ejemplo, un ejemplo de programación desarrollado con diferentes lenguajes:</p>
+<div class="conmarco">
+<p>Programa para mostrar un texto en la consola:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">C</label><label for="__tabbed_1_2">C++</label><label for="__tabbed_1_3">Java</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hola</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hola&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">static</span><span class="w"> </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="o">[]</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="w"> </span><span class="s">&quot;Hola&quot;</span><span class="w"> </span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>Pulsando en cada pestaña podemos ver un texto u otro. Para lograr esto, tenemos que activar en <code>mkdocs.yml</code> la extensión <em>tabbed</em>:</p>
+<div class="highlight"><pre><span></span><code>markdown_extensions:
+  - pymdownx.tabbed:
+      alternate_style: true
+</code></pre></div>
+<p>Y el texto <em>markdown</em> es:</p>
+<div class="highlight"><pre><span></span><code>=== &quot;C&quot;
+
+    ``` c
+    <span class="ni">#include</span> &lt;stdio.h&gt;
+
+    int main(void) {
+      printf(&quot;Hola\n&quot;);
+      return 0;
+    }
+<span class="sb">    ```</span>
+
+<span class="sb">=== &quot;C++&quot;</span>
+
+<span class="sb">    ``` c++</span>
+<span class="sb">    #include &lt;iostream&gt;</span>
+
+<span class="sb">    int main(void) {</span>
+<span class="sb">      std::cout &lt;&lt; &quot;Hola&quot; &lt;&lt; std::endl;</span>
+<span class="sb">      return 0;</span>
+<span class="sb">    }</span>
+<span class="sb">    ```</span>
+
+=== &quot;Java&quot;
+
+    ``` java
+    class HelloWorld {
+      static public void main( String args[] ) {
+      System.out.println( &quot;Hola&quot; );
+      }
+    }
+    ```
+</code></pre></div>
+<p>El bloque de texto que se muestra en cada pestaña se delimita mediante la sangría, con una línea de cabecera formada por tres símbolos <code>===</code> seguidos del texto a mostrar en la pestaña.</p>
+<p>Como funcionalidad añadida, las pestañas llevan asociado un enlace, que podemos descubrir pulsando sobre la misma con el botón secundario del ratón, y podemos usar para enlazar al texto:</p>
+<div class="codehilite"><pre><span></span><code>Véase [ejemplo de programación](midocumento.html#__tabbed_1_1)
+</code></pre></div>
+
+<h2 id="cards">Cards<a class="headerlink" href="#cards" title="Permanent link">&para;</a></h2>
+<p>Supongamos una página inicial que muestra una serie de textos distribuidos en una rejilla de recuadros:</p>
+<div class="conmarco">
+<p style="font-size: 1.5em;
+          margin-top: 0.83em;
+          margin-bottom: 0.83em;
+          font-weight: bold;
+          color:CadetBlue">
+Material for MkDocs
+</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4a8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6m-1 2h1.5v3.78l2.33 2.33-1.06 1.06L14 12.4zM2 18a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3.83c.31.71.71 1.38 1.17 2zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h2.05L5 12l.05 1zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3c-.46.62-.86 1.29-1.17 2z"/></svg></span> <strong>Disponible en 5 minutos</strong></p>
+<hr />
+<p>Instale <a href="https://pypistats.org/packages/mkdocs-material">mkdocs-material</a> con <a href="https://squidfunk.github.io/mkdocs-material/getting-started/#with-pip">pip</a> y comience a trabajar
+en cuestión de minutos</p>
+<p><a href="https://squidfunk.github.io/mkdocs-material/getting-started/#getting-started"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Inicio</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1M338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"/></svg></span> <strong>Es markdown</strong></p>
+<hr />
+<p>Preocúpese solo por redactar los contenidos</p>
+<p><a href="https://squidfunk.github.io/mkdocs-material/reference/#reference"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Referencia</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 8h3v12h1v1h-4v-1h1v-3h-4l-1.5 3H14v1h-4v-1h1zm1 1-3.5 7H18zM5 3h5c1.11 0 2 .89 2 2v11H9v-5H6v5H3V5c0-1.11.89-2 2-2m1 2v4h3V5z"/></svg></span> <strong>Configurable</strong></p>
+<hr />
+<p>Cambie colores, fuentes, idioma, iconos, logo y todo lo demás con poco esfuerzo</p>
+<p><a href="https://squidfunk.github.io/mkdocs-material/customization/#customization"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Configuración</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> <strong>Open Source</strong></p>
+<hr />
+<p>Material for MkDocs se distribuye bajo licencia MIT a través del <a href="https://github.com/squidfunk/mkdocs-material">sitio web en GitHub</a></p>
+<p><a href="https://squidfunk.github.io/mkdocs-material/license/#license"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Licencia</a></p>
+</li>
+</ul>
+</div>
+</div>
+<p>¿Como se logra esta presentación? No se trata de una extensión, sino de la hoja de estilos de <a href="https://squidfunk.github.io/mkdocs-material">Material for MkDocs</a>, que define dos clases especiales llamadas <code>grid</code> y <code>card</code>. </p>
+<p>Lo primero que tenemos que hacer es crear un bloque <code>&lt;div&gt;</code> que pertenezca a esas clases, y poner en su interior una lista de elementos:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;grid cards&quot;</span> <span class="na">markdown</span><span class="o">=</span><span class="s">1</span><span class="p">&gt;</span>
+-   elemento 1
+-   elemento 2
+-   elemento 3
+-   elemento 4
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>El contenido del bloque se mostrará con ese aspecto de rejilla, con cada elemento de la lista en una celda. El número de celdas por fila depende del tamaño de la ventana del navegador y de la resolución de la pantalla.</p>
+<div class="grid cards conmarco">
+<ul>
+<li>elemento 1</li>
+<li>elemento 2</li>
+<li>elemento 3</li>
+<li>elemento 4</li>
+</ul>
+</div>
+<p>Usamos el atributo <code>markdown</code> porque, sin el, la sintaxis <em>markdown</em> no tiene efecto en un bloque <code>&lt;div&gt;</code>. Tenemos que activar la extensión en <code>md_in_html</code> en <code>mkdocs.yml</code>:</p>
+<div class="highlight"><pre><span></span><code>markdown_extensions:
+  - md_in_html
+</code></pre></div>
+<p>A partir de ahí, basta con trabajarse cada elemento de la lista:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;grid cards&quot;</span> <span class="na">markdown</span><span class="o">=</span><span class="s">1</span><span class="p">&gt;</span>
+
+-   :material-clock-fast:{ .lg .middle } __Disponible en 5 minutos__
+
+    ---
+
+    Instale [mkdocs-material] con [pip] y comience a trabajar
+    en cuestión de minutos
+
+    [:octicons-arrow-right-24: Inicio][Inicio]
+
+-   :fontawesome-brands-markdown:{ .lg .middle } __Es markdown__
+
+    ---
+
+    Preocúpese solo por redactar los contenidos
+
+    [:octicons-arrow-right-24: Referencia][Referencia]
+
+-   :material-format-font:{ .lg .middle } __Configurable__
+
+    ---
+
+    Cambie colores, fuentes, idioma, iconos, logo y todo lo demás con poco esfuerzo
+
+    [:octicons-arrow-right-24: Configuración][Configuración]
+
+-   :material-scale-balance:{ .lg .middle } __Open Source__
+
+    ---
+
+    Material for MkDocs se distribuye bajo licencia MIT a través de [GitHub]
+
+    [:octicons-arrow-right-24: Licencia][Licencia]
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Veamos el primero de ellos:</p>
+<div class="highlight"><pre><span></span><code>-   :material-clock-fast:{ .lg .middle } __Disponible en 5 minutos__
+
+    ---
+
+    Instale [mkdocs-material] con [pip] y comience a trabajar
+    en cuestión de minutos
+
+    [:octicons-arrow-right-24: Inicio][Inicio]
+</code></pre></div>
+<p>Utilizamos tres párrafos y una línea separadora marcada con tres guiones. Incluimos en el texto dos iconos:</p>
+<ul>
+<li><code>:material-clock-fast:</code> <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4a8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6m-1 2h1.5v3.78l2.33 2.33-1.06 1.06L14 12.4zM2 18a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3.83c.31.71.71 1.38 1.17 2zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h2.05L5 12l.05 1zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3c-.46.62-.86 1.29-1.17 2z"/></svg></span> </li>
+<li><code>:octicons-arrow-right-24:</code><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> </li>
+</ul>
+<p>Las clases <code>.lg</code> y <code>.middle</code> configuran el aspecto del icono.</p>
+<p>Si quitamos la clase <code>cards</code>, podemos aplicar el comportamiento de rejilla a otros tipos de elementos, todos ellos de bloque:</p>
+<div class="grid conmarco">
+<div class="highlight"><span class="filename">Programa en lenguaje Java:</span><pre><span></span><code><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="o">[]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hola Mundo&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Resultado:</span><pre><span></span><code>Hola Mundo
+</code></pre></div>
+</div>
+<p>Lo que se consigue con:</p>
+<div class="highlight"><pre><span></span><code>&lt;div class=&quot;grid&quot; markdown=&quot;1&quot;&gt;
+
+<span class="sb">```java</span><span class="w"> </span>title=&quot;Programa en lenguaje Java:&quot;
+<span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="o">[]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hola Mundo&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="p">}</span>
+<span class="sb">```</span>
+
+```title=&quot;Resultado:&quot;
+Hola Mundo
+```
+
+&lt;/div&gt;
+</code></pre></div>
+<p>Otro ejemplo:</p>
+<div class="grid">
+<div class="admonition abstract">
+<p class="admonition-title">Programa en lenguaje Java</p>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="o">[]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hola Mundo&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Resultado:</p>
+<p>Hola Mundo</p>
+</div>
+</div>
+<p>Esto se obtiene con:</p>
+<div class="highlight"><pre><span></span><code>&lt;div class=&quot;grid&quot; markdown=&quot;1&quot;&gt;
+
+!!! abstract &quot;Programa en lenguaje Java&quot;
+
+<span class="sb">    ```java</span>
+<span class="w">    </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="o">[]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hola Mundo&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">    </span><span class="p">}</span>
+<span class="sb">    ```</span>
+
+!!! success  &quot;Resultado:&quot;
+
+    Hola Mundo
+
+
+&lt;/div&gt;
+</code></pre></div>
 
 
 
@@ -1504,15 +1828,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
+          
+          <a href="207ExtResaltado.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 📔 Más opciones de resalte">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                📔 Más opciones de resalte
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="001Archivos.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 📔 Archivos web">
+          <a href="209ExtDiagramas.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 📔 Diagramas y fórmulas">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                📔 Archivos web
+                📔 Diagramas y fórmulas
               </div>
             </div>
             <div class="md-footer__button md-icon">
