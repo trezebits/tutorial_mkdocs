@@ -10,26 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://trezebits.github.io/tutorial_mkdocs/">
+        <link rel="canonical" href="https://trezebits.github.io/tutorial_mkdocs/003Scripts/">
       
       
+        <link rel="prev" href="../002Estilos/">
       
-        <link rel="next" href="001Archivos/">
+      
+        <link rel="next" href="../004Sitio/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
     
     
       
-        <title>Crear documentación con MkDocs</title>
+        <title>Scripts - Crear documentación con MkDocs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="css/estilos.css">
+      <link rel="stylesheet" href="../css/estilos.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mi-guia-personal-para-crear-documentacion" class="md-skip">
+        <a href="#scripts" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="." title="Crear documentación con MkDocs" class="md-header__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
+    <a href=".." title="Crear documentación con MkDocs" class="md-header__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 0 1-.699.409l-5.523 1.68a.75.75 0 0 1-.747-.188.75.75 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 0 0 .1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introducción
+              Scripts
             
           </span>
         </div>
@@ -199,7 +201,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Crear documentación con MkDocs" class="md-nav__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
+    <a href=".." title="Crear documentación con MkDocs" class="md-nav__button md-logo" aria-label="Crear documentación con MkDocs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.263 2.177a1.75 1.75 0 0 1 2.474 0l2.586 2.586a1.75 1.75 0 0 1 0 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 0 1-.699.409l-5.523 1.68a.75.75 0 0 1-.747-.188.75.75 0 0 1-.188-.747l1.673-5.5a1.75 1.75 0 0 1 .466-.756L14.476 4.963ZM4.708 16.361a.26.26 0 0 0-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 0 0 .1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 0 0 0-.354l-2.586-2.586a.25.25 0 0 0-.354 0L16.061 5.5Z"/></svg>
@@ -226,19 +228,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -247,7 +240,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -256,8 +248,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -272,11 +266,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -290,7 +284,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Páginas web
@@ -304,7 +298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="001Archivos/" class="md-nav__link">
+      <a href="../001Archivos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -325,7 +319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="002Estilos/" class="md-nav__link">
+      <a href="../002Estilos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -343,10 +337,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="003Scripts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Scripts
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -355,6 +369,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creando-un-par-de-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creando un par de scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archivos-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivos JavaScript
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -367,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="004Sitio/" class="md-nav__link">
+      <a href="../004Sitio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -395,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="005Herramientas/" class="md-nav__link">
+      <a href="../005Herramientas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -415,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="006CrearProyecto/" class="md-nav__link">
+      <a href="../006CrearProyecto/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -486,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="100Markdown/" class="md-nav__link">
+      <a href="../100Markdown/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -507,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="101MkdParrafos/" class="md-nav__link">
+      <a href="../101MkdParrafos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -528,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="102MkdEnlaces/" class="md-nav__link">
+      <a href="../102MkdEnlaces/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -549,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="103MkdImagenes/" class="md-nav__link">
+      <a href="../103MkdImagenes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -570,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="104MkdListas/" class="md-nav__link">
+      <a href="../104MkdListas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -591,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="105MkdResalte/" class="md-nav__link">
+      <a href="../105MkdResalte/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="106MkdHTML/" class="md-nav__link">
+      <a href="../106MkdHTML/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -701,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="200Extensiones/" class="md-nav__link">
+      <a href="../200Extensiones/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -722,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="201ExtTablas/" class="md-nav__link">
+      <a href="../201ExtTablas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -743,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="202ExtHTML/" class="md-nav__link">
+      <a href="../202ExtHTML/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -764,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="203ExtEmojis/" class="md-nav__link">
+      <a href="../203ExtEmojis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -785,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="204ExtAuxiliar/" class="md-nav__link">
+      <a href="../204ExtAuxiliar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -806,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="205ExtCodigo/" class="md-nav__link">
+      <a href="../205ExtCodigo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -827,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="206ExtListas/" class="md-nav__link">
+      <a href="../206ExtListas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -848,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="207ExtResaltado/" class="md-nav__link">
+      <a href="../207ExtResaltado/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -869,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="208ExtBloques/" class="md-nav__link">
+      <a href="../208ExtBloques/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -890,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="209ExtDiagramas/" class="md-nav__link">
+      <a href="../209ExtDiagramas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="210ExtEmergente/" class="md-nav__link">
+      <a href="../210ExtEmergente/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -932,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="211ExtSnnipets/" class="md-nav__link">
+      <a href="../211ExtSnnipets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -960,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="300Metadatos/" class="md-nav__link">
+      <a href="../300Metadatos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1037,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="401ConfAssets/" class="md-nav__link">
+      <a href="../401ConfAssets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1058,7 +1110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="402ExtenderTema/" class="md-nav__link">
+      <a href="../402ExtenderTema/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1079,7 +1131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="403ConfColores/" class="md-nav__link">
+      <a href="../403ConfColores/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1100,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="404ConfFuentes/" class="md-nav__link">
+      <a href="../404ConfFuentes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1121,7 +1173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="405ConfIdioma/" class="md-nav__link">
+      <a href="../405ConfIdioma/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1142,7 +1194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="406ConfLogos/" class="md-nav__link">
+      <a href="../406ConfLogos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1163,7 +1215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="407ConfNavegacion/" class="md-nav__link">
+      <a href="../407ConfNavegacion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1184,7 +1236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="408ConfBusquedas/" class="md-nav__link">
+      <a href="../408ConfBusquedas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1205,7 +1257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="409ConfCabeceraPie/" class="md-nav__link">
+      <a href="../409ConfCabeceraPie/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1226,7 +1278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="410ConfRepositorio/" class="md-nav__link">
+      <a href="../410ConfRepositorio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1254,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="901GitHub/" class="md-nav__link">
+      <a href="../901GitHub/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1285,29 +1337,166 @@
   
 
 
-<div style="float:right;
-            border: 1px solid grey;
-            border-radius: 12px;
-            padding: 5px;
-            margin-left: 50px"
->
+<h1 id="scripts">Scripts<a class="headerlink" href="#scripts" title="Permanent link">&para;</a></h1>
+<p>Además del formato de etiquetas HTML y las reglas de estilo CSS, la tercera "pata" del diseño web son los <em>scripts</em>, es decir, pequeños fragmentos de programación escritos en lenguaje <em>JavaScript</em>, que se descargan como parte del texto del archivo, o como ficheros aparte.</p>
+<div class="admonition info">
+<p class="admonition-title">El lenguaje JavaScript</p>
+<p>JavaScript fue desarrollado originalmente por la empresa Netscape, desarrolladora de uno de los primeros navegadores web de la historia. El nombre se debió a los planes que tenía Netscape para que su navegador fuera compatible con la tecnología Java, de forma que ambos lenguajes de programación, <em>Java</em> y <em>JavaScript</em> fueran complementarios. Históricamente esto ha generado cierta confusión. De hecho, son lenguajes diferentes.</p>
+</div>
+<h2 id="creando-un-par-de-scripts">Creando un par de scripts<a class="headerlink" href="#creando-un-par-de-scripts" title="Permanent link">&para;</a></h2>
+<p>Supongamos el siguiente ejemplo:</p>
+<div class="highlight"><pre><span></span><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
 
-<img src="img/endesarrollo.jpg" 
-     style= width:200px;
-            height:200px;"
->
+&lt;p id=&quot;Texto&quot;&gt;Texto del documento&lt;/p&gt;
 
-<p style="text-align:center;color:red">
-<b><i>Cuaderno en desarrollo</i></b>
-</p>
+&lt;button type=&quot;button&quot; onclick=&quot;CambiarRojo()&quot;&gt;Rojo&lt;/button&gt;
+&lt;button type=&quot;button&quot; onclick=&quot;CambiarAzul()&quot;&gt;Azul&lt;/button&gt;
+
+&lt;script&gt;
+
+    function CambiarRojo() {
+        var elemento=document.getElementById(&#39;Texto&#39;)
+        elemento.style.color=&#39;Red&#39;
+    }
+
+    function CambiarAzul() {
+        var elemento=document.getElementById(&#39;Texto&#39;)
+        elemento.style.color=&#39;Blue&#39;
+    }
+
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; 
+</code></pre></div>
+<p>En este ejemplo mostramos un texto y, a continuación, dos botones. Pulsando en cada uno de ellos cambia el color del texto:</p>
+<div class="conmarco">
+
+<p id="Texto">Texto del documento</p>
+
+<button type="button" 
+
+        style="border: 1px solid grey;
+               padding: 5px;
+               border-radius: 5px;"
+
+        onclick="CambiarRojo()"
+
+>Rojo</button>
+
+<button type="button" 
+
+        style="border: 1px solid grey;
+               padding: 5px;
+               border-radius: 5px;"
+
+        onclick="CambiarAzul()"
+
+>Azul</button>
+
+<script>
+
+    function CambiarRojo() {
+        var elemento=document.getElementById('Texto')
+        elemento.style.color='Red'
+    }
+
+    function CambiarAzul() {
+        var elemento=document.getElementById('Texto')
+        elemento.style.color='Blue'
+    }
+
+</script>
 
 </div>
 
-<h1 id="mi-guia-personal-para-crear-documentacion">Mi guía personal para <br>crear documentación<a class="headerlink" href="#mi-guia-personal-para-crear-documentacion" title="Permanent link">&para;</a></h1>
-<p>En este cuaderno voy a hacer un recorrido por las herramientas que utilizo para reunir y publicar mis notas.</p>
-<p>Organizo mis documentos en forma de <em>cuadernos</em>, siendo cada uno de ellos un proyecto aparte. Comienzan siendo una colección de archivos de texto, uno por cada capítulo. Los transformo en páginas web con un software llamado <a href="https://squidfunk.github.io/mkdocs-material">Material for MkDocs</a>. </p>
-<p>Una vez completado el proceso de conversión, subo los archivos resultantes a un servidor web . En mi caso, utilizo <a href="https://github.com">GitHub</a> como alojamiento. Presento mis cuadernos con la ayuda de <a href="https://pages.github.com">GitHub Pages</a>.</p>
-<p>Veamos todo esto en detalle.</p>
+<p>Cada botón se define en mitad del texto mediante etiquetas <code>&lt;button&gt;</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>
+texto del botón
+<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>El atributo <code>onclick</code> establece lo que hay que hacer al pulsar sobre un botón:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nx">button</span><span class="w">  </span><span class="k">type</span><span class="p">=</span><span class="s">&quot;button&quot;</span><span class="w">  </span><span class="nx">onclick</span><span class="p">=</span><span class="s">&quot;CambiarRojo()&quot;</span><span class="w"> </span><span class="p">&gt;</span>
+</code></pre></div>
+
+<p>En este ejemplo le decimos que, al pulsar sobre el botón, ejecute una tarea a la que denominamos <em>CambiarRojo()</em>. A esto se le llama una función, y los paréntesis que acompañan su nombre, la identifican como función, entre otras cosas.</p>
+<p>En algún lugar del documento tenemos que definir, entre etiquetas <code>&lt;script&gt;</code>, las instrucciones de nuestras dos funciones:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;script&gt;</span>
+
+<span class="w">  </span>function<span class="w"> </span>CambiarRojo()<span class="w"> </span>{
+<span class="w">    </span>instrucciones<span class="w"> </span>a<span class="w"> </span>ejecutar
+<span class="w">  </span>}
+
+<span class="w">  </span>function<span class="w"> </span>CambiarAzul()<span class="w"> </span>{
+<span class="w">    </span>instrucciones<span class="w"> </span>a<span class="w"> </span>ejecutar
+<span class="w">  </span>}
+
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+
+<p>El bloque <code>&lt;script&gt;</code>, con las instrucciones a ejecutar para cada función, se puede colocar en la sección <code>&lt;body&gt;</code> o en la cabecera <code>&lt;head&gt;</code>:</p>
+<div class="highlight"><pre><span></span><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+    &lt;head&gt;
+<span class="hll">    &lt;script&gt;
+</span><span class="hll">
+</span><span class="hll">        function CambiarRojo() {
+</span><span class="hll">            var elemento=document.getElementById(&#39;Texto&#39;)
+</span><span class="hll">            elemento.style.color=&#39;Red&#39;
+</span><span class="hll">        }
+</span><span class="hll">
+</span><span class="hll">        function CambiarAzul() {
+</span><span class="hll">            var elemento=document.getElementById(&#39;Texto&#39;)
+</span><span class="hll">            elemento.style.color=&#39;Blue&#39;
+</span><span class="hll">        }
+</span><span class="hll">
+</span><span class="hll">    &lt;/script&gt;
+</span>    &lt;/head&gt;
+
+    &lt;body&gt;
+
+        &lt;p id=&quot;Texto&quot;&gt;Texto del documento&lt;/p&gt;
+
+        &lt;button type=&quot;button&quot; onclick=&quot;CambiarRojo()&quot;&gt;Rojo&lt;/button&gt;
+        &lt;button type=&quot;button&quot; onclick=&quot;CambiarAzul()&quot;&gt;Azul&lt;/button&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt; 
+</code></pre></div>
+<p>Las instrucciones de los scripts siguen la sintaxis del lenguaje de programación <em>JavaScript</em>. Su estudio va mucho más allá del propósito de este cuaderno. Para lo que aquí necesitamos, nos basta con saber el significado de los archivos <code>.js</code> añadidos por MkDocs.</p>
+<h2 id="archivos-javascript">Archivos JavaScript<a class="headerlink" href="#archivos-javascript" title="Permanent link">&para;</a></h2>
+<p>La posibilidad de insertar scripts en el texto HTML resulta interesante en el caso de pequeños scripts. Para labores de programación más ambiciosas, es costumbre poner los scripts en archivos aparte, con extensión <code>.js</code>, abreviatura de <em>javascript</em>.</p>
+<p>Hagamos un experimento. Vamos a crear el siguiente archivo <code>prueba.html</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;Texto&quot;</span><span class="p">&gt;</span>Texto del documento<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;CambiarRojo()&quot;</span><span class="p">&gt;</span>Rojo<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;CambiarAzul()&quot;</span><span class="p">&gt;</span>Azul<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./cambiar_colores.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span> 
+</code></pre></div>
+<p>Entre las etiquetas <code>&lt;script&gt;... &lt;/script&gt;</code> no ponemos nada. Usamos el atributo <code>src</code>, abreviatura de "source", para indicar al navegador que tome las instrucciones de un archivo llamado <code>cambiar_colores.js</code>, cuyo texto es:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">CambiarRojo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">elemento</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;Texto&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="nx">elemento</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="o">=</span><span class="s1">&#39;Red&#39;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">CambiarAzul</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">elemento</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;Texto&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="nx">elemento</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="o">=</span><span class="s1">&#39;Blue&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Como veremos más adelante, algunas de las funcionalidades incorporadas por MkDocs se obtienen gracias a los archivos de script que se añaden automáticamente a los archivos resultantes.</p>
 
 
 
@@ -1342,15 +1531,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
+          
+          <a href="../002Estilos/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Atributos y estilos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Atributos y estilos
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="001Archivos/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Archivos web">
+          <a href="../004Sitio/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Crear un sitio web">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                Archivos web
+                Crear un sitio web
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1384,14 +1589,14 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.footer", "toc.integrate", "navigation.top", "navigation.indexes", "content.code.copy", "content.tooltips", "search.highlight"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "toc.integrate", "navigation.top", "navigation.indexes", "content.code.copy", "content.tooltips", "search.highlight"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="javascripts/tables.js"></script>
+        <script src="../javascripts/tables.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../javascripts/mathjax.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
