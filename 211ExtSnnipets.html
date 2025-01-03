@@ -1142,6 +1142,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#para-insertar-la-fecha-de-creacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para insertar la fecha de creación
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1634,6 +1643,21 @@ Más texto del documento 1.
           auto_append:
              - include/enlaces.md
 </code></pre></div>
+<h2 id="para-insertar-la-fecha-de-creacion">Para insertar la fecha de creación<a class="headerlink" href="#para-insertar-la-fecha-de-creacion" title="Permanent link">&para;</a></h2>
+<p>Para compilar el proyecto, podemos crear un script de comandos:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/micarpeta/miproyecto
+date<span class="w"> </span><span class="s2">&quot;+Fecha última actualización: %d-%b-%Y&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>./include/fecha.md
+mkdocs<span class="w"> </span>build
+</code></pre></div>
+<p>El funcionamiento del comando "date" depende del sistema operativo. En mi caso, tratándose de un Mac, se crea un archivo con una línea de texto:</p>
+<blockquote>
+<p>Fecha última actualización: 03-ene-2025</p>
+</blockquote>
+<p>En la página de portada incluimos:</p>
+<div class="codehilite"><pre><span></span><code><span class="o">--</span><span class="mi">8</span><span class="o">&lt;--</span><span class="w"> </span><span class="s2">&quot;include/fecha.md&quot;</span>
+</code></pre></div>
+
+<p>y de esta forma, siempre que compilemos el proyecto se mostrará la fecha de actualización en la primera página.</p>
 
 
 
@@ -1706,19 +1730,14 @@ Más texto del documento 1.
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <!-- Copyright and theme information -->
-<div class="md-copyright">
+      <div class="md-copyright">
   
   
-    Compilado con
-    <a
-      href="https://squidfunk.github.io/mkdocs-material/"
-      target="_blank" rel="noopener"
-    >
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
     </a>
   
-  . Actualizado el 2-enero-2025
 </div>
       
     </div>
