@@ -1,6 +1,13 @@
 :root {
     --md-primary-fg-color:        #5382B0;
 }
+.md-footer {
+    --md-footer-fg-color:                white;
+    --md-footer-fg-color--light:         white;
+    --md-footer-fg-color--lighter:       white;
+    --md-footer-bg-color:                #5382B0;
+}
+
 
 .md-typeset p { text-align: justify;}
 
